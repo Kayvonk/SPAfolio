@@ -1,14 +1,49 @@
+/* ---------------Footer------------------------- */
+
+@media (max-width: 360px) {
 .footer {
-  min-height: 100px;
-  background: #e5e5e5;
-  position: relative;
+  margin-left: 24%;
+  }
 }
 
-.footer span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 3px;
-  background: #b8b8b8;
+@media (min-width: 360px) {
+.footer {
+  margin-left: 27%;
+  }
+}
+
+@media (min-width: 410px) {
+.footer {
+  margin-left: 28%;
+  }
+}
+
+@media (min-width: 425px) {
+.footer {
+  margin-left: 35%;
+  }
+}
+
+@media (min-width: 576px) {
+.footer {
+  margin-left: 38%;
+  }
+}
+
+@media (min-width: 768px) {
+.footer {
+  margin-left: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+.footer {
+  margin-left: 42%;
+  }
+}
+
+@media (min-width: 1200px) {
+.footer {
+  margin-left: 45%;
+  }
 }

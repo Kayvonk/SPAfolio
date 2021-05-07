@@ -18,6 +18,14 @@ function PortfolioPage() {
           alt="MyPracticeCompanionImgThumbnail" /></a>
       </Container>
       <Container style={{ marginTop: 80 }}>
+        <LinkCard> <a href="https://github.com/Kayvonk/NotAnotherDirectory" class="col-sm-12 project-text" target="_blank" rel="noreferrer">
+          <h3>Not Another Directory</h3>
+        </a> </LinkCard>
+        <a class="center" href="https://kayvonk.github.io/NotAnotherDirectory/" target="_blank" rel="noreferrer"> <img
+          src="assets/employeedirectorythumbnail.PNG" class="img-fluid rounded mx-auto d-block images"
+          alt="NotAnotherDirectoryImgThumbnail" /></a>
+      </Container>
+      <Container style={{ marginTop: 80 }}>
         <LinkCard> <a href="https://github.com/Kayvonk/DailyPlannerForTheWin" class="col-sm-12 project-text" target="_blank" rel="noreferrer">
           <h3>Daily Planner For The Win</h3>
         </a> </LinkCard>

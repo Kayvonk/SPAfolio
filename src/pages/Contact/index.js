@@ -11,11 +11,12 @@ function ContactPage() {
       <Container style={{ marginTop: 30 }}>
         <TitleCard>
           <h1>Contact</h1>
+          <h2>Want to connect? Here are the best ways reach me. </h2>
         </TitleCard>
         <ContactCard>
-          <h3> Email: kayvonk@gmail.com </h3>
+          <h3> email: kayvonk@gmail.com </h3>
           <br />
-          <h3> Phone: 503-309-1924</h3>
+          <h3> phone: 503-309-1924</h3>
         </ContactCard>
       </Container>
       <CardBtn />
