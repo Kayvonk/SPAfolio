@@ -18,14 +18,6 @@ function HomePage() {
           alt="MyPracticeCompanionImgThumbnail" />
         <p className="slidingTextLine1"> Full-stack Web Developer</p>
         <p className="slidingTextLine2">with a passion for innovation.</p>
-        {/* <p>
-            <span className="word midnight"></span>
-            <span className="word belize">innovation.</span>
-            <span className="word pomegranate">responsiveness.</span>
-            <span className="word green">interactivity.</span>
-            <span className="word wisteria">aesthetic.</span>
-          </p> */}
-
       </Container>
       <Container style={{ marginTop: 900, marginBottom: 80 }}>
         <div className="col-sm left-text">
