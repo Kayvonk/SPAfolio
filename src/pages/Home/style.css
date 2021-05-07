@@ -1,0 +1,530 @@
+.left-text {
+  margin-top: 5%;
+  font-size: 17pt;
+  text-align: justify;
+}
+
+.about-me-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .about-me-image {
+  width: 30rem;
+  }
+}
+
+/* ------------Profile square ---------------- */
+.profileSquare{
+  margin-top: 0%;
+}
+
+/* ------------------Slide Image Right------------------------ */
+
+.imgAnimate {
+  position: absolute;
+  line-height: 50px;
+  text-align: left;
+  animation: slide-right 2s ease-out;
+}
+
+@keyframes slide-right {
+ 0%   { 
+ transform: translateX(-100%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+/* ------------------Slide Text Left------------------------ */
+
+  /* ------------------Line 1 Text------------------------ */
+
+@media (max-width: 360px) {
+.slidingText {
+  position: absolute;
+  width: 15rem;
+  left: 10%;
+  margin-left: 20px;
+  height: 40px;
+  top: 55%;
+  }
+}
+
+@media (min-width: 360px) {
+.slidingText {
+  position: absolute;
+  width: 15rem;
+  left: 15%;
+  margin-left: 25px;
+  height: 40px;
+  top: 50%;
+  }
+}
+
+@media (min-width: 410px) {
+.slidingText {
+  position: absolute;
+  width: 18rem;
+  left: 20%;
+  margin-left: 25px;
+  height: 40px;
+  top: 50%;
+  }
+}
+
+@media (min-width: 425px) {
+.slidingText {
+  position: absolute;
+  width: 18rem;
+  left: 20%;
+  margin-left: 25px;
+  height: 40px;
+  top: 50%;
+  }
+}
+
+/* ---------------- */
+
+@media (min-width: 576px) { 
+
+.slidingText {
+  position: absolute;
+  width: 20rem;
+  left: 20%;
+  margin-left: 25px;
+  height: 40px;
+  top: 55%;
+  }
+}
+
+@media (min-width: 576px) { 
+
+.slidingText {
+  position: absolute;
+  width: 20rem;
+  left: 20%;
+  margin-left: 25px;
+  height: 40px;
+  top: 55%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+.slidingText {
+  position: absolute;
+  width: 40rem;
+  left: 20%;
+  margin-left: 25px;
+  height: 40px;
+  top: 60%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.slidingText {
+  position: absolute;
+  width: 40rem;
+  left: 20%;
+  margin-left: 25px;
+  height: 40px;
+  top: 60%;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+.slidingText {
+  position: absolute;
+  width: 40rem;
+  left: 20%;
+  margin-left: 25px;
+  height: 40px;
+  top: 65%;
+  }
+}
+
+/* ------------------Line 2 Text------------------------ */
+
+@media (max-width: 360px) {
+.text {
+  position: relative;
+  width: 8rem;
+  left: 20%;
+  margin-left: 20px;
+  height: 40px;
+  top: 65%;
+  }
+}
+
+@media (min-width: 360px) {
+.text {
+  position: relative;
+  width: 8rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 60%;
+  }
+}
+
+@media (min-width: 410px) {
+.text {
+  position: relative;
+  width: 10rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 60%;
+  }
+}
+
+@media (min-width: 425px) {
+.text {
+  position: relative;
+  width: 15rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 60%;
+  }
+}
+
+/* ----------------------- */
+
+@media (min-width: 576px) { 
+
+.text {
+  position: relative;
+  width: 20rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 65%;
+  }
+}
+
+@media (min-width: 576px) { 
+
+.text {
+  position: relative;
+  width: 20rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 65%;
+  }
+}
+
+@media (min-width: 576px) { 
+
+.text {
+  position: relative;
+  width: 20rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 65%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+.text {
+  position: relative;
+  width: 32rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 65%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.text {
+  position: relative;
+  width: 35rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 70%;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+.text {
+  position: relative;
+  width: 40rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 75%;
+  }
+}
+
+
+/* ------------------Slide Text Left------------------------ */
+
+@media (max-width: 360px) {
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  position: absolute;
+ line-height: 50px;
+ text-align: left;
+ animation: slide-left 2s ease-out;
+  }
+}
+
+@media (min-width: 360px) {
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  position: absolute;
+ line-height: 50px;
+ text-align: left;
+ animation: slide-left 2s ease-out;
+  }
+}
+
+@media (min-width: 410px) {
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  position: absolute;
+ line-height: 50px;
+ text-align: left;
+ animation: slide-left 2s ease-out;
+  }
+}
+@media (min-width: 425px) {
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+ line-height: 50px;
+ text-align: left;
+ animation: slide-left 2s ease-out;
+  }
+}
+
+/* ---------------- */
+
+
+@media (min-width: 576px) { 
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+ line-height: 50px;
+ text-align: left;
+ animation: slide-left 2s ease-out;
+  }
+}
+
+@media (min-width: 576px) { 
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  position: absolute;
+  line-height: 50px;
+  text-align: left;
+  animation: slide-left 2s ease-out;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  position: absolute;
+  line-height: 50px;
+  text-align: left;
+  animation: slide-left 2s ease-out;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  position: absolute;
+  line-height: 50px;
+  text-align: left;
+  animation: slide-left 2s ease-out;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .rotatingText, .slidingText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  position: absolute;
+  line-height: 50px;
+  text-align: left;
+  animation: slide-left 2s ease-out;
+  }
+}
+
+@keyframes slide-left {
+ 0%   { 
+ transform: translateX(10%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+
+/* ------------------Silly Letters------------------------ */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+/* -----------------Silly word------------------------- */
+
+@media (max-width: 360px) {
+.word {
+  position: absolute;
+  width: 7rem;
+  opacity: 0;
+}
+}
+
+@media (min-width: 360px) {
+.word {
+  position: absolute;
+  width: 8rem;
+  opacity: 0;
+}
+}
+
+@media (min-width: 410px) {
+.word {
+  position: absolute;
+  width: 8rem;
+  opacity: 0;
+}
+}
+
+@media (min-width: 425px) {
+.word {
+  position: absolute;
+  width: 10rem;
+  opacity: 0;
+}
+}
+
+/* ------------- */
+
+
+@media (min-width: 576px) { 
+.word {
+  position: absolute;
+  width: 10rem;
+  opacity: 0;
+}
+}
+
+@media (min-width: 576px) { 
+.word {
+  position: absolute;
+  width: 12rem;
+  opacity: 0;
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+.word {
+  position: absolute;
+  width: 16rem;
+  opacity: 0;
+}
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+.word {
+  position: absolute;
+  width: 22rem;
+  opacity: 0;
+}
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+.word {
+  position: absolute;
+  width: 30rem;
+  opacity: 0;
+}
+}

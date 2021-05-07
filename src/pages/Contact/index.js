@@ -9,8 +9,12 @@ function ContactPage() {
   return (
     <div>
       <Container style={{ marginTop: 30 }}>
-        <TitleCard><h1>Contact</h1></TitleCard>
-        <ContactCard><h3> Email: kayvonk@gmail.com </h3>
+        <TitleCard>
+          <h1>Contact</h1>
+        </TitleCard>
+        <ContactCard>
+          <h3> Email: kayvonk@gmail.com </h3>
+          <br />
           <h3> Phone: 503-309-1924</h3>
         </ContactCard>
       </Container>
