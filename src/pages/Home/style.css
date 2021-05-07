@@ -1,3 +1,6 @@
+
+/* ------------About me text ---------------- */
+
 .left-text {
   margin-top: 5%;
   font-size: 17pt;
@@ -15,11 +18,64 @@
 }
 
 /* ------------Profile square ---------------- */
-.profileSquare{
-  margin-top: 0%;
+
+@media (max-width: 360px) {
+.profileSquare {
+  width: 10rem;
+  }
 }
 
-/* ------------------Slide Image Right------------------------ */
+@media (min-width: 360px) {
+.profileSquare {
+  width: 10rem;
+  }
+}
+
+@media (min-width: 410px) {
+.profileSquare {
+  width: 10rem;
+  }
+}
+
+@media (min-width: 425px) {
+.profileSquare {
+  width: 12rem;
+  }
+}
+
+/* ---------------- */
+
+@media (min-width: 576px) { 
+
+.profileSquare {
+  width: 12rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+.profileSquare {
+  width: 14rem;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.profileSquare {
+  width: 15rem;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+.profileSquare {
+  width: 18rem;
+  }
+}
+/* ------------------Slide image right------------------------ */
 
 .imgAnimate {
   position: absolute;
@@ -36,12 +92,12 @@
  transform: translateX(0%); 
  }
 }
-/* ------------------Slide Text Left------------------------ */
+/* ------------------Slide text Left------------------------ */
 
-  /* ------------------Line 1 Text------------------------ */
+  /* ------------------Line 1 text------------------------ */
 
 @media (max-width: 360px) {
-.slidingText {
+.slidingTextLine1 {
   position: absolute;
   width: 15rem;
   left: 10%;
@@ -52,7 +108,7 @@
 }
 
 @media (min-width: 360px) {
-.slidingText {
+.slidingTextLine1 {
   position: absolute;
   width: 15rem;
   left: 15%;
@@ -63,7 +119,7 @@
 }
 
 @media (min-width: 410px) {
-.slidingText {
+.slidingTextLine1 {
   position: absolute;
   width: 18rem;
   left: 20%;
@@ -74,23 +130,9 @@
 }
 
 @media (min-width: 425px) {
-.slidingText {
+.slidingTextLine1 {
   position: absolute;
   width: 18rem;
-  left: 20%;
-  margin-left: 25px;
-  height: 40px;
-  top: 50%;
-  }
-}
-
-/* ---------------- */
-
-@media (min-width: 576px) { 
-
-.slidingText {
-  position: absolute;
-  width: 20rem;
   left: 20%;
   margin-left: 25px;
   height: 40px;
@@ -98,11 +140,13 @@
   }
 }
 
+/* ---------------- */
+
 @media (min-width: 576px) { 
 
-.slidingText {
+.slidingTextLine1 {
   position: absolute;
-  width: 20rem;
+  width: 22rem;
   left: 20%;
   margin-left: 25px;
   height: 40px;
@@ -113,10 +157,10 @@
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
-.slidingText {
+.slidingTextLine1 {
   position: absolute;
   width: 40rem;
-  left: 20%;
+  left: 25%;
   margin-left: 25px;
   height: 40px;
   top: 60%;
@@ -126,10 +170,10 @@
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-.slidingText {
+.slidingTextLine1 {
   position: absolute;
   width: 40rem;
-  left: 20%;
+  left: 25%;
   margin-left: 25px;
   height: 40px;
   top: 60%;
@@ -139,22 +183,22 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
-.slidingText {
+.slidingTextLine1 {
   position: absolute;
   width: 40rem;
-  left: 20%;
+  left: 25%;
   margin-left: 25px;
   height: 40px;
   top: 65%;
   }
 }
 
-/* ------------------Line 2 Text------------------------ */
+/* ------------------Line 2 text------------------------ */
 
 @media (max-width: 360px) {
-.text {
+.slidingTextLine2 {
   position: relative;
-  width: 8rem;
+  width: 13rem;
   left: 20%;
   margin-left: 20px;
   height: 40px;
@@ -163,9 +207,9 @@
 }
 
 @media (min-width: 360px) {
-.text {
+.slidingTextLine2 {
   position: relative;
-  width: 8rem;
+  width: 14rem;
   left: 25%;
   margin-left: 25px;
   height: 40px;
@@ -174,18 +218,7 @@
 }
 
 @media (min-width: 410px) {
-.text {
-  position: relative;
-  width: 10rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 60%;
-  }
-}
-
-@media (min-width: 425px) {
-.text {
+.slidingTextLine2 {
   position: relative;
   width: 15rem;
   left: 25%;
@@ -195,11 +228,22 @@
   }
 }
 
+@media (min-width: 425px) {
+.slidingTextLine2 {
+  position: relative;
+  width: 18rem;
+  left: 25%;
+  margin-left: 25px;
+  height: 40px;
+  top: 65%;
+  }
+}
+
 /* ----------------------- */
 
 @media (min-width: 576px) { 
 
-.text {
+.slidingTextLine2 {
   position: relative;
   width: 20rem;
   left: 25%;
@@ -211,21 +255,9 @@
 
 @media (min-width: 576px) { 
 
-.text {
+.slidingTextLine2 {
   position: relative;
-  width: 20rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 65%;
-  }
-}
-
-@media (min-width: 576px) { 
-
-.text {
-  position: relative;
-  width: 20rem;
+  width: 24rem;
   left: 25%;
   margin-left: 25px;
   height: 40px;
@@ -236,23 +268,23 @@
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
-.text {
+.slidingTextLine2 {
   position: relative;
   width: 32rem;
-  left: 25%;
+  left: 30%;
   margin-left: 25px;
   height: 40px;
-  top: 65%;
+  top: 70%;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-.text {
+.slidingTextLine2 {
   position: relative;
   width: 35rem;
-  left: 25%;
+  left: 30%;
   margin-left: 25px;
   height: 40px;
   top: 70%;
@@ -262,10 +294,10 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
-.text {
+.slidingTextLine2 {
   position: relative;
   width: 40rem;
-  left: 25%;
+  left: 30%;
   margin-left: 25px;
   height: 40px;
   top: 75%;
@@ -276,7 +308,7 @@
 /* ------------------Slide Text Left------------------------ */
 
 @media (max-width: 360px) {
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -288,7 +320,7 @@
 }
 
 @media (min-width: 360px) {
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -300,7 +332,7 @@
 }
 
 @media (min-width: 410px) {
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -311,7 +343,7 @@
   }
 }
 @media (min-width: 425px) {
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -326,7 +358,7 @@
 
 
 @media (min-width: 576px) { 
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -338,7 +370,7 @@
 }
 
 @media (min-width: 576px) { 
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 25px;
@@ -351,7 +383,7 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 30px;
@@ -364,7 +396,7 @@
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 35px;
@@ -377,7 +409,7 @@
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  .rotatingText, .slidingText {
+  .slidingTextLine1, .slidingTextLine2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 40px;

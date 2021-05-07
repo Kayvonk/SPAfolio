@@ -12,23 +12,22 @@ function HomePage() {
         </TitleCard>
       </Container>
       <Container style={{ marginTop: 30 }}>
-        <img className="profileSquare imgAnimate image-fluid"
+        <img className="profileSquare imgAnimate"
           style={{ borderRadius: '200px' }}
           src="assets/profileSquare.PNG"
           alt="MyPracticeCompanionImgThumbnail" />
-        <p className="slidingText"> Full-stack Web Developer</p>
-        <div class="text rotatingText">
-          <p>with a passion for innovation.</p>
-          <p>
+        <p className="slidingTextLine1"> Full-stack Web Developer</p>
+        <p className="slidingTextLine2">with a passion for innovation.</p>
+        {/* <p>
             <span className="word midnight"></span>
             <span className="word belize">innovation.</span>
             <span className="word pomegranate">responsiveness.</span>
             <span className="word green">interactivity.</span>
             <span className="word wisteria">aesthetic.</span>
-          </p>
-        </div>
+          </p> */}
+
       </Container>
-      <Container style={{ marginTop: 800, marginBottom: 80 }}>
+      <Container style={{ marginTop: 900, marginBottom: 80 }}>
         <div className="col-sm left-text">
           <h2>About Me</h2>
           <img className="about-me-image img-fluid float-sm-right mb-sm-3 ml-sm-3"

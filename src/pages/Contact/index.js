@@ -13,7 +13,9 @@ function ContactPage() {
           <h1>Contact</h1>
           <h2>Want to connect? Here are the best ways reach me. </h2>
         </TitleCard>
-        <ContactCard>
+        <ContactCard style={{
+          backgroundColor: '#00000000'
+        }}>
           <h3> email: kayvonk@gmail.com </h3>
           <br />
           <h3> phone: 503-309-1924</h3>
