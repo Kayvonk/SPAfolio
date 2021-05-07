@@ -10,7 +10,7 @@ This webpage serves as a home for information pertaining to past projects as wel
 
 ## Usage
 
-Deployed Application: http://Kayvonk.github.io/Reactfolio
+Deployed Application: https://penultimate-reactfolio.herokuapp.com/
 
 ![HomePageThumbnail](./public/assets/homepagethumbnail.PNG)
 ![PortfolioThumbnail](./public/assets/portfolioPageThumbnail.PNG)
