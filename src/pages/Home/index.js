@@ -19,7 +19,7 @@ function HomePage() {
         <p className="slidingTextLine1"> Full-stack Web Developer</p>
         <p className="slidingTextLine2">with a passion for innovation.</p>
       </Container>
-      <Container style={{ marginTop: 900, marginBottom: 80 }}>
+      <Container style={{ marginTop: 900, marginBottom: 300 }}>
         <div className="col-sm left-text">
           <h2>About Me</h2>
           <img className="about-me-image img-fluid float-sm-right mb-sm-3 ml-sm-3"

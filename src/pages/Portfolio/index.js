@@ -49,7 +49,7 @@ function PortfolioPage() {
           src="assets/burgerThumbnail.PNG" class="img-fluid rounded mx-auto d-block images"
           alt="BurgerDevourerImgThumbnail" /></a>
       </Container>
-      <Container style={{ marginTop: 80, marginBottom: 80 }}>
+      <Container style={{ marginTop: 80, marginBottom: 150 }}>
         <LinkCard> <a href="https://github.com/Kayvonk/WonderfulWeatherApp" class="col-sm-12 project-text" target="_blank" rel="noreferrer">
           <h3> Wonderful Weather App</h3>
         </a> </LinkCard>
