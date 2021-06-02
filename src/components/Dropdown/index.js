@@ -24,15 +24,5 @@ const BurgerMenu = (props) => {
         </div>
     );
 }
-{/* <Dropdown className="dropdown" isOpen={dropdownOpen} toggle={toggle} size="lg">
-    <DropdownToggle color="343A40" className="dropdown-icon" >
-        <FontAwesomeIcon icon={faBars} className="bars" size="lg" />
-    </DropdownToggle>
-    <DropdownMenu right>
-        <DropdownItem href="/dashboard">Dashboard</DropdownItem>
-        <DropdownItem href="/">Settings</DropdownItem>
-        <DropdownItem onClick={() => logout({ returnTo: window.location.origin })}>Logout</DropdownItem>
-    </DropdownMenu>
-</Dropdown > */}
 
 export default BurgerMenu;
