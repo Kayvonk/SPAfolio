@@ -17,7 +17,7 @@ function ContactPage() {
           <div className="cardText">
             <h3>kayvonk@gmail.com </h3>
             <br />
-            <h3>(503)-309-1924</h3>
+            <h3>(503)&nbsp;309-1924</h3>
           </div>
         </ContactCard>
       </Container>
