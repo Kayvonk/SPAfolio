@@ -12,9 +12,9 @@ This webpage serves as a home for information pertaining to past projects as wel
 
 Deployed Application: https://penultimate-reactfolio.herokuapp.com/
 
-![HomePageThumbnail](./public/assets/homepagethumbnail.PNG)
-![PortfolioThumbnail](./public/assets/portfolioPageThumbnail.PNG)
-![ContactThumbnail](./public/assets/contactPageThumbnail.PNG)
+![HomePageThumbnail](./public/assets/reactPortfolioHomepagethumbnail.PNG)
+![PortfolioThumbnail](./public/assets/reactPortfolioPortfoliopagethumbnail.PNG)
+![ContactThumbnail](./public/assets/reactPortfolioContactpagethumbnail.PNG)
 
 ## Questions
 Follow me on [Github](https://github.com/Kayvonk).
