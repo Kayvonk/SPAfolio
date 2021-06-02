@@ -10,6 +10,14 @@ function PortfolioPage() {
       <Container style={{ marginTop: 50 }}>
         <TitleCard> <h1> Portfolio </h1> </TitleCard>
         <TitleCard> <h2> Clicking images will direct you to the deployed application! </h2> </TitleCard>
+        <LinkCard><a href="https://github.com/Kayvonk/voyagr" class="col-sm-12 project-text" target="_blank" rel="noreferrer">
+          <h3>Voyagr</h3>
+        </a> </LinkCard>
+        <a class="center" href="https://voyagr.netlify.app/" target="_blank" rel="noreferrer"><img
+          src="assets/voyagrHomepagethumbnailsmall.PNG" class="img-fluid images"
+          alt="voyagrThumbnail" /></a>
+      </Container>
+      <Container style={{ marginTop: 80 }}>
         <LinkCard><a href="https://github.com/Kayvonk/MyPracticeCompanion" class="col-sm-12 project-text" target="_blank" rel="noreferrer">
           <h3>My Practice Companion</h3>
         </a> </LinkCard>
@@ -37,7 +45,7 @@ function PortfolioPage() {
         <LinkCard> <a href="https://github.com/Koffidanh/job-aid" class="col-sm-12 project-text" target="_blank" rel="noreferrer">
           <h3> Job Aid</h3>
         </a> </LinkCard>
-        <a class="center" href="https://github.com/Koffidanh/job-aid" target="_blank" rel="noreferrer"> <img
+        <a class="center" href="https://whispering-eyrie-33529.herokuapp.com/" target="_blank" rel="noreferrer"> <img
           src="assets/jobaidThumbnail.PNG" class="img-fluid rounded mx-auto d-block images"
           alt="JobAideImgThumbnail" /></a>
       </Container>

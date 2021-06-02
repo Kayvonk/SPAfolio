@@ -6,7 +6,6 @@ export const Navbar = () => {
     return (
         <>
             <Nav>
-                <BurgerMenu />
                 <NavMenu>
                     <NavLink to="/" exact activeStyle={{ textDecoration: "none", color: "#3e81c9" }}>
                         Home
@@ -18,6 +17,7 @@ export const Navbar = () => {
                         Contact
                     </NavLink>
                 </NavMenu>
+                <BurgerMenu />
             </Nav>
         </>
     )

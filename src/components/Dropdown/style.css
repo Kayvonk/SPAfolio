@@ -1,19 +1,23 @@
-.dropdown-toggle
+.dropdown-icon
  { 
- height: 80px;
+  height: 80px;
   width: 80px;
-
+  background-color: black !important;
 }
 
 @media (min-width: 768px) {
-.dropdown {
+.dropdownDiv {
   display: none;
 
 }
 }
 
 @media (max-width: 768px) {
-.dropdown {
+.dropdownDiv {
     display: block;
 }
+}
+
+.fa-bars {
+  color: white;
 }

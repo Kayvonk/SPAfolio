@@ -1,0 +1,9 @@
+@media (max-width: 410px) { 
+.cardText {
+  padding: 0rem;  }
+}
+
+@media (min-width: 410px) { 
+.cardText {
+  padding: 0 1rem;  }
+}

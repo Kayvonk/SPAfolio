@@ -14,7 +14,7 @@ function HomePage() {
       <Container style={{ marginTop: 30 }}>
         <img className="profileSquare imgAnimate"
           style={{ borderRadius: '200px' }}
-          src="assets/profileSquare.png"
+          src="assets/profile.jpg"
           alt="profileImage" />
         <p className="slidingTextLine1"> Full-stack Web Developer</p>
         <p className="slidingTextLine2">with a passion for innovation.</p>
