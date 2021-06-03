@@ -1,5 +1,5 @@
 .card {
-  background: transparent !important;
+  background: linear-gradient(90deg, rgba(207,219,216,1),  rgba(255,255,255,1)) !important;
   width: fit-content !important;
   text-align: center;
   margin-top: 2rem;
@@ -7,5 +7,9 @@
   box-shadow: 0 15px 20px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   font-family:Arial, Helvetica, sans-serif;
   border-radius: 24px !important;
+}
+
+.card:hover {
+ background: linear-gradient(45deg, rgba(255,255,255,1),  rgba(207,219,216,1)) !important;
 }
 
