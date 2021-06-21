@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Container from "../Container";
-import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
 export default class ProfileImage extends Component {
