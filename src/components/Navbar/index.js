@@ -1,6 +1,5 @@
 import React from 'react'
 import { Nav, NavLink, NavMenu } from "./NavbarElements"
-import BurgerMenu from "../Dropdown"
 
 export const Navbar = () => {
     return (
@@ -17,7 +16,6 @@ export const Navbar = () => {
                         Contact
                     </NavLink>
                 </NavMenu>
-                {/* <BurgerMenu /> */}
             </Nav>
         </>
     )
