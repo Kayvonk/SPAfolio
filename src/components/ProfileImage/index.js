@@ -14,7 +14,6 @@ export default class ProfileImage extends Component {
                             style={{ borderRadius: '200px' }}
                             src="assets/profile.jpg"
                             alt="profileImage" />
-                        <br />
                     </Container>
                 </Fade>
                 <Container>
