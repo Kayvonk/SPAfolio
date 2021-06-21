@@ -8,15 +8,13 @@ export default class ProfileImage extends Component {
     render() {
         return (
             <div>
-                <Fade left>
-                    <Container style={{ marginTop: 30 }}>
-                        <img className="profileSquare"
-                            style={{ borderRadius: '200px' }}
-                            src="assets/profile.jpg"
-                            alt="profileImage" />
-                        <br />
-                    </Container>
-                </Fade>
+                <Container style={{ marginTop: 30 }}>
+                    <img className="profileSquare"
+                        style={{ borderRadius: '200px' }}
+                        src="assets/profile.jpg"
+                        alt="profileImage" />
+                    <br />
+                </Container>
                 <Container style={{ position: "relative" }}>
                     <Slide right cascade>
                         <p className="slidingTextLine1"
