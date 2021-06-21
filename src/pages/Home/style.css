@@ -240,6 +240,13 @@
   }
 }
 
+@media (min-width: 1400px) { 
+.slidingTextLine1 {
+    margin-top: 20%;
+  margin-left: 15%;
+  }
+}
+
 /* ------------------Line 2 text------------------------ */
 
 @media (max-width: 280px) {
@@ -313,6 +320,13 @@
 
 .slidingTextLine2 {
       margin-top: 30%;
+  margin-left: 20%;
+  }
+}
+
+@media (min-width: 1400px) { 
+.slidingTextLine2 {
+      margin-top: 25%;
   margin-left: 20%;
   }
 }
