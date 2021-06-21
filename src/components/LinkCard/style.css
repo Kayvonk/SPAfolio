@@ -3,6 +3,7 @@ header {
     margin: 0%;
 }
 
-h1 {
-    font-family: fantasy;
+h1, h2 {
+    color:lightgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

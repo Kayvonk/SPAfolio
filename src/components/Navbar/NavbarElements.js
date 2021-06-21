@@ -3,25 +3,29 @@ import styled from "styled-components"
 
 
 export const Nav = styled.nav`
-background: #000;
+background: #333333;
 height: 80px;
 display: flex;
 justify-content: space-between;
-padding: 0.5rem calc((100vw-1000px) / 2);
 z-index: 10;
 `;
 
 export const NavLink = styled(Link)`
-color: #fff;
+font-size: larger ;
+color: lightgray;
 display: flex;
 align-items: center;
-text-decoration: none;
+text-decoration: none !important;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 
+&:hover {
+  color: #17A2B8 !important;
+}
+
 &.active {
-    color: #3e81c9;
+    color: #17A2B8 !important;
 }
 `;
 

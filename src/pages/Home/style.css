@@ -2,7 +2,8 @@
 /* ------------About me text ---------------- */
 
 .left-text {
-  margin-top: 5%;
+  color: lightgrey;
+  /* margin-top: 5%; */
   font-size: 17pt;
   text-align: justify;
 }
@@ -21,12 +22,14 @@
 
 @media (max-width: 360px) {
 .profileSquare {
+  border:5px solid lightgrey;
   width: 12rem;
   }
 }
 
 @media (min-width: 360px) {
 .profileSquare {
+    border:5px solid lightgrey;
   width: 12rem;
   }
 }
@@ -309,6 +312,7 @@
 
 @media (max-width: 360px) {
   .slidingTextLine1, .slidingTextLine2 {
+  color: lightgrey;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -321,13 +325,14 @@
 
 @media (min-width: 360px) {
   .slidingTextLine1, .slidingTextLine2 {
+      color: lightgrey;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
   position: absolute;
  line-height: 50px;
  text-align: left;
- animation: slide-left 2s ease-out;
+ /* animation: slide-left 2s ease-out; */
   }
 }
 
@@ -339,7 +344,7 @@
   position: absolute;
  line-height: 50px;
  text-align: left;
- animation: slide-left 2s ease-out;
+ /* animation: slide-left 2s ease-out; */
   }
 }
 @media (min-width: 425px) {
@@ -350,7 +355,7 @@
   position: absolute;
  line-height: 50px;
  text-align: left;
- animation: slide-left 2s ease-out;
+ /* animation: slide-left 2s ease-out; */
   }
 }
 
@@ -365,7 +370,7 @@
   position: absolute;
  line-height: 50px;
  text-align: left;
- animation: slide-left 2s ease-out;
+ /* animation: slide-left 2s ease-out; */
   }
 }
 
@@ -377,7 +382,7 @@
   position: absolute;
   line-height: 50px;
   text-align: left;
-  animation: slide-left 2s ease-out;
+  /* animation: slide-left 2s ease-out; */
   }
 }
 
@@ -390,7 +395,7 @@
   position: absolute;
   line-height: 50px;
   text-align: left;
-  animation: slide-left 2s ease-out;
+  /* animation: slide-left 2s ease-out; */
   }
 }
 
@@ -403,7 +408,7 @@
   position: absolute;
   line-height: 50px;
   text-align: left;
-  animation: slide-left 2s ease-out;
+  /* animation: slide-left 2s ease-out; */
   }
 }
 
@@ -416,18 +421,18 @@
   position: absolute;
   line-height: 50px;
   text-align: left;
-  animation: slide-left 2s ease-out;
+  /* animation: slide-left 2s ease-out; */
   }
 }
 
-@keyframes slide-left {
+/* @keyframes slide-left {
  0%   { 
  transform: translateX(10%); 		
  }
  100% { 
  transform: translateX(0%); 
  }
-}
+} */
 
 /* ------------------Silly Letters------------------------ */
 

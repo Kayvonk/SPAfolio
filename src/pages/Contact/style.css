@@ -1,9 +1,11 @@
 @media (max-width: 410px) { 
 .cardText {
+  color: lightgrey;
   padding: 0rem;  }
 }
 
 @media (min-width: 410px) { 
 .cardText {
+    color: lightgrey;
   padding: 0 1rem;  }
 }

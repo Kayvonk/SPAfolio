@@ -1,6 +1,8 @@
 body {
   overflow-x: hidden; 
-  background: rgb(140,164,174);
-  background: linear-gradient(90deg, rgba(140,164,174,1) 0%, rgba(188,203,194,1) 9%, rgba(255,255,255,1) 17%, rgba(255,255,255,1) 83%, rgba(188,203,194,1) 91%, rgba(140,164,174,1) 100%);
+  /* background: rgb(140,164,174); */
+  background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgb(31, 31, 31) 9%, rgb(36, 36, 36) 17%, rgb(34, 34, 34) 83%, rgb(41, 41, 41) 91%, rgb(48, 48, 48) 100%);
+
+  /* background: linear-gradient(90deg, rgba(140,164,174,1) 0%, rgba(188,203,194,1) 9%, rgba(255,255,255,1) 17%, rgba(255,255,255,1) 83%, rgba(188,203,194,1) 91%, rgba(140,164,174,1) 100%); */
   background-repeat: repeat-y;
 }
