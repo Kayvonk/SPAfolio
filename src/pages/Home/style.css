@@ -165,6 +165,7 @@
 
 @media (max-width: 360px) {
 .slidingTextLine1 {
+    position: absolute;
   margin-top: 5%;
   margin-left: 5%;
 
@@ -173,6 +174,7 @@
 
 @media (min-width: 360px) {
 .slidingTextLine1 {
+    position: absolute;
   margin-top: 5%;
     margin-left: 10%;
   }
@@ -214,7 +216,6 @@
 @media (min-width: 1200px) { 
 
 .slidingTextLine1 {
-  position: relative;
   margin-top: 2%;
   }
 }
@@ -223,21 +224,21 @@
 
 @media (max-width: 360px) {
 .slidingTextLine2 {
-  position: relative;
+  position: absolute;
+    margin-top: 10%;
   margin-left: 10%;
-
   }
 }
 
 @media (min-width: 360px) {
 .slidingTextLine2 {
-  position: relative;
+  position: absolute;
+   margin-top: 10%;
     margin-left: 15%;
-
   }
 }
-/* 
-@media (min-width: 410px) {
+
+/* @media (min-width: 410px) {
 .slidingTextLine2 {
   }
 }
@@ -253,13 +254,13 @@
 
 .slidingTextLine2 {
   }
-} */
+}
 
-/* @media (min-width: 576px) { 
+@media (min-width: 576px) { 
 
 .slidingTextLine2 {
   }
-} */
+  } */
 
 /* // Medium devices (tablets, 768px and up) */
 /* @media (min-width: 768px) { 
