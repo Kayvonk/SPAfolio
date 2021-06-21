@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Container from "../Container";
+import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
 export default class ProfileImage extends Component {
@@ -7,14 +8,16 @@ export default class ProfileImage extends Component {
     render() {
         return (
             <div>
-                <Container style={{ marginTop: 30 }}>
-                    <img className="profileSquare"
-                        style={{ borderRadius: '200px' }}
-                        src="assets/profile.jpg"
-                        alt="profileImage" />
-                    <br />
-                </Container>
-                <Container style={{ position: "relative" }}>
+                <Fade left>
+                    <Container style={{ marginTop: 30 }}>
+                        <img className="profileSquare"
+                            style={{ borderRadius: '200px' }}
+                            src="assets/profile.jpg"
+                            alt="profileImage" />
+                        <br />
+                    </Container>
+                </Fade>
+                <Container>
                     <Slide right cascade>
                         <p className="slidingTextLine1"
                         > Full-stack Web Developer</p>
