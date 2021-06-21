@@ -8,7 +8,7 @@ export default class ProfileImage extends Component {
     render() {
         return (
             <div>
-                <Fade top>
+                <Fade left>
                     <Container style={{ marginTop: 30 }}>
                         <img className="profileSquare"
                             style={{ borderRadius: '200px' }}
