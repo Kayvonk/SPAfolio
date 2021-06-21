@@ -20,6 +20,10 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 
+@media screen and (max-width:360px) {
+  font-size: small ;
+}
+
 &:hover {
   color: #17A2B8 !important;
 }
@@ -34,8 +38,8 @@ display: flex;
 align-items: center;
 margin-left: auto;
 margin-right: auto;
-
+/* 
 @media screen and (max-width: 768px) {
     display:none;
-}
+} */
 `;

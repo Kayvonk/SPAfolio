@@ -3,9 +3,17 @@
 
 .left-text {
   color: lightgrey;
-  /* margin-top: 5%; */
-  font-size: 17pt;
   text-align: justify;
+}
+@media (max-width: 360px) {
+.left-text  {
+  font-size: 13pt;
+  }
+}
+
+@media (min-width: 360px) {
+.left-text  {
+  font-size: 17pt;  }
 }
 
 .about-me-image {
@@ -23,123 +31,26 @@
 @media (max-width: 360px) {
 .profileSquare {
   border:5px solid lightgrey;
-  width: 12rem;
+  width: 10rem;
   }
 }
 
 @media (min-width: 360px) {
 .profileSquare {
-    border:5px solid lightgrey;
+  border:5px solid lightgrey;
   width: 12rem;
   }
 }
 
 @media (min-width: 410px) {
-.profileSquare {
-  width: 12rem;
-  }
-}
-
-@media (min-width: 425px) {
-.profileSquare {
-  width: 12rem;
-  }
-}
-
-/* ---------------- */
-
-@media (min-width: 576px) { 
-
-.profileSquare {
-  width: 12rem;
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
 .profileSquare {
   width: 14rem;
   }
 }
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
-.profileSquare {
-  width: 15rem;
-  }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-.profileSquare {
-  width: 18rem;
-  }
-}
-/* ------------------Slide image right------------------------ */
-
-.imgAnimate {
-  position: absolute;
-  line-height: 50px;
-  text-align: left;
-  animation: slide-right 2s ease-out;
-}
-
-@keyframes slide-right {
- 0%   { 
- transform: translateX(-100%); 		
- }
- 100% { 
- transform: translateX(0%); 
- }
-}
-/* ------------------Slide text Left------------------------ */
-
-  /* ------------------Line 1 text------------------------ */
-
-@media (max-width: 360px) {
-.slidingTextLine1 {
-  position: absolute;
-  width: 15rem;
-  left: 10%;
-  margin-left: 20px;
-  height: 40px;
-  top: 60%;
-  }
-}
-
-@media (min-width: 360px) {
-.slidingTextLine1 {
-  position: absolute;
-  width: 15rem;
-  left: 15%;
-  margin-left: 25px;
-  height: 40px;
-  top: 60%;
-  }
-}
-
-@media (min-width: 410px) {
-.slidingTextLine1 {
-  position: absolute;
-  width: 18rem;
-  left: 20%;
-  margin-left: 25px;
-  height: 40px;
-  top: 50%;
-  }
-}
-
 @media (min-width: 425px) {
-.slidingTextLine1 {
-  position: absolute;
-  width: 18rem;
-  left: 20%;
-  margin-left: 25px;
-  height: 40px;
-  top: 55%;
+.profileSquare {
+  width: 14rem;
   }
 }
 
@@ -147,52 +58,164 @@
 
 @media (min-width: 576px) { 
 
-.slidingTextLine1 {
-  position: absolute;
-  width: 22rem;
-  left: 20%;
-  margin-left: 25px;
-  height: 40px;
-  top: 55%;
+.profileSquare {
+  width: 16rem;
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
-.slidingTextLine1 {
-  position: absolute;
-  width: 40rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 60%;
+.profileSquare {
+  width: 16rem;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-.slidingTextLine1 {
-  position: absolute;
-  width: 40rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 60%;
+.profileSquare {
+  width: 18rem;
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
+.profileSquare {
+  width: 18rem;
+  }
+}
+
+  /* ------------------Line 1 text------------------------ */
+
+.slidingTextLine1, .slidingTextLine2 {
+  color: lightgrey;
+    font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 360px) {
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 14px;
+  }
+}
+
+@media (min-width: 360px) {
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 16px;
+  }
+}
+
+@media (min-width: 410px) {
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 18px;
+  }
+}
+@media (min-width: 425px) {
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 18px;
+  }
+}
+
+/* ---------------- */
+
+
+@media (min-width: 576px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 25px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 30px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 35px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 40px;
+  }
+}
+
+/* ------------------------------------------- */
+
+@media (max-width: 360px) {
 .slidingTextLine1 {
-  position: absolute;
-  width: 40rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 65%;
+  margin-top: 5%;
+  margin-left: 5%;
+
+  }
+}
+
+@media (min-width: 360px) {
+.slidingTextLine1 {
+  margin-top: 5%;
+    margin-left: 10%;
+  }
+}
+
+/* @media (min-width: 410px) {
+.slidingTextLine1 {
+  }
+}
+
+@media (min-width: 425px) {
+.slidingTextLine1 {
+  }
+} */
+
+/* ---------------- */
+
+/* @media (min-width: 576px) { 
+
+.slidingTextLine1 {
+  }
+} */
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { 
+
+.slidingTextLine1 {
+  }
+} */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { 
+
+.slidingTextLine1 {
+  }
+} */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+.slidingTextLine1 {
+  position: relative;
+  margin-top: 2%;
   }
 }
 
@@ -201,367 +224,60 @@
 @media (max-width: 360px) {
 .slidingTextLine2 {
   position: relative;
-  width: 13rem;
-  left: 20%;
-  margin-left: 20px;
-  height: 40px;
-  top: 70%;
+  margin-left: 10%;
+
   }
 }
 
 @media (min-width: 360px) {
 .slidingTextLine2 {
   position: relative;
-  width: 14rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 70%;
+    margin-left: 15%;
+
   }
 }
-
+/* 
 @media (min-width: 410px) {
 .slidingTextLine2 {
-  position: relative;
-  width: 15rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 60%;
   }
 }
 
 @media (min-width: 425px) {
 .slidingTextLine2 {
-  position: relative;
-  width: 18rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 65%;
   }
-}
+} */
 
 /* ----------------------- */
 
-@media (min-width: 576px) { 
+/* @media (min-width: 576px) { 
 
 .slidingTextLine2 {
-  position: relative;
-  width: 20rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 65%;
   }
-}
-
-@media (min-width: 576px) { 
-
-.slidingTextLine2 {
-  position: relative;
-  width: 24rem;
-  left: 25%;
-  margin-left: 25px;
-  height: 40px;
-  top: 65%;
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
-.slidingTextLine2 {
-  position: relative;
-  width: 32rem;
-  left: 30%;
-  margin-left: 25px;
-  height: 40px;
-  top: 70%;
-  }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
-.slidingTextLine2 {
-  position: relative;
-  width: 35rem;
-  left: 30%;
-  margin-left: 25px;
-  height: 40px;
-  top: 70%;
-  }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-.slidingTextLine2 {
-  position: relative;
-  width: 40rem;
-  left: 30%;
-  margin-left: 25px;
-  height: 40px;
-  top: 75%;
-  }
-}
-
-
-/* ------------------Slide Text Left------------------------ */
-
-@media (max-width: 360px) {
-  .slidingTextLine1, .slidingTextLine2 {
-  color: lightgrey;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  position: absolute;
- line-height: 50px;
- text-align: left;
- animation: slide-left 2s ease-out;
-  }
-}
-
-@media (min-width: 360px) {
-  .slidingTextLine1, .slidingTextLine2 {
-      color: lightgrey;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  position: absolute;
- line-height: 50px;
- text-align: left;
- /* animation: slide-left 2s ease-out; */
-  }
-}
-
-@media (min-width: 410px) {
-  .slidingTextLine1, .slidingTextLine2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  position: absolute;
- line-height: 50px;
- text-align: left;
- /* animation: slide-left 2s ease-out; */
-  }
-}
-@media (min-width: 425px) {
-  .slidingTextLine1, .slidingTextLine2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  position: absolute;
- line-height: 50px;
- text-align: left;
- /* animation: slide-left 2s ease-out; */
-  }
-}
-
-/* ---------------- */
-
-
-@media (min-width: 576px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  position: absolute;
- line-height: 50px;
- text-align: left;
- /* animation: slide-left 2s ease-out; */
-  }
-}
-
-@media (min-width: 576px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-  position: absolute;
-  line-height: 50px;
-  text-align: left;
-  /* animation: slide-left 2s ease-out; */
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  position: absolute;
-  line-height: 50px;
-  text-align: left;
-  /* animation: slide-left 2s ease-out; */
-  }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 35px;
-  position: absolute;
-  line-height: 50px;
-  text-align: left;
-  /* animation: slide-left 2s ease-out; */
-  }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  position: absolute;
-  line-height: 50px;
-  text-align: left;
-  /* animation: slide-left 2s ease-out; */
-  }
-}
-
-/* @keyframes slide-left {
- 0%   { 
- transform: translateX(10%); 		
- }
- 100% { 
- transform: translateX(0%); 
- }
 } */
 
-/* ------------------Silly Letters------------------------ */
+/* @media (min-width: 576px) { 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-
-p {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-}
-
-.letter {
-  display: inline-block;
-  position: relative;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
-}
-
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.letter.behind {
-  transform: rotateX(-90deg);
-}
-
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
-
-.pomegranate {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
-.midnight {
-  color: #2c3e50;
-}
-
-/* -----------------Silly word------------------------- */
-
-@media (max-width: 360px) {
-.word {
-  position: absolute;
-  width: 7rem;
-  opacity: 0;
-}
-}
-
-@media (min-width: 360px) {
-.word {
-  position: absolute;
-  width: 8rem;
-  opacity: 0;
-}
-}
-
-@media (min-width: 410px) {
-.word {
-  position: absolute;
-  width: 8rem;
-  opacity: 0;
-}
-}
-
-@media (min-width: 425px) {
-.word {
-  position: absolute;
-  width: 10rem;
-  opacity: 0;
-}
-}
-
-/* ------------- */
-
-
-@media (min-width: 576px) { 
-.word {
-  position: absolute;
-  width: 10rem;
-  opacity: 0;
-}
-}
-
-@media (min-width: 576px) { 
-.word {
-  position: absolute;
-  width: 12rem;
-  opacity: 0;
-}
-}
+.slidingTextLine2 {
+  }
+} */
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-.word {
-  position: absolute;
-  width: 16rem;
-  opacity: 0;
-}
-}
+/* @media (min-width: 768px) { 
 
+.slidingTextLine2 {
+  }
+} */
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-.word {
-  position: absolute;
-  width: 22rem;
-  opacity: 0;
-}
-}
+/* @media (min-width: 992px) { 
+
+.slidingTextLine2 {
+  }
+} */
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-.word {
-  position: absolute;
-  width: 30rem;
-  opacity: 0;
-}
-}
+/* @media (min-width: 1200px) { 
+
+.slidingTextLine2 {
+  }
+} */

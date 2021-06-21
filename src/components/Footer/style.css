@@ -52,7 +52,13 @@ margin: 0 .5rem;
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
+.footer {
+  margin-left: 10%;
+  }
+}
+
+@media (min-width: 300px) {
 .footer {
   margin-left: 14%;
   }

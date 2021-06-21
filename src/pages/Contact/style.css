@@ -1,11 +1,17 @@
+.cardText{
+  font-family: Arial, Helvetica, sans-serif;
+    color: lightgrey;
+
+}
+
 @media (max-width: 410px) { 
-.cardText {
-  color: lightgrey;
+.cardText, .contactText {
+  font-size: large;
   padding: 0rem;  }
 }
 
 @media (min-width: 410px) { 
-.cardText {
-    color: lightgrey;
+.cardText, .contactText {
+    font-size: x-large;
   padding: 0 1rem;  }
 }

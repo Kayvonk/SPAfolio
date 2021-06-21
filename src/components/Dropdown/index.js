@@ -16,9 +16,9 @@ const BurgerMenu = (props) => {
                     <FontAwesomeIcon icon={faBars} className="bars" size="2x" />
                 </DropdownToggle>
                 <DropdownMenu right>
-                    <DropdownItem href="/">Home</DropdownItem>
-                    <DropdownItem href="/portfolio">Portfolio</DropdownItem>
-                    <DropdownItem href="/contact">Contact</DropdownItem>
+                    <DropdownItem tag="a" href="/">Home</DropdownItem>
+                    <DropdownItem tag="a" href="/portfolio">Portfolio</DropdownItem>
+                    <DropdownItem tag="a" href="/contact">Contact</DropdownItem>
                 </DropdownMenu>
             </Dropdown >
         </div>

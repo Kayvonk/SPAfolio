@@ -12,14 +12,14 @@ function ContactPage() {
       <Container style={{ marginTop: 30 }}>
         <TitleCard>
           <h1>Contact</h1>
-          <h2>Want to connect about a project? I'm happy to help.</h2>
+          <h2 className="contactText">Want to connect about a project? I'm happy to help.</h2>
         </TitleCard>
         <Flip bottom>
           <ContactCard>
             <div className="cardText">
-              <h3>kayvonk@gmail.com </h3>
+              <p>kayvonk@gmail.com </p>
               <br />
-              <h3>(503)&nbsp;309-1924</h3>
+              <p>(503)&nbsp;309-1924</p>
             </div>
           </ContactCard>
         </Flip>

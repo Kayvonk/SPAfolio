@@ -10,3 +10,15 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: auto;
     width: 100%;
   }
+
+  @media (max-width: 410px) { 
+.portfolioText {
+  font-size: large;
+  padding: 0rem;  }
+}
+
+@media (min-width: 410px) { 
+.portfolioText {
+    font-size: x-large;
+  padding: 0 1rem;  }
+}

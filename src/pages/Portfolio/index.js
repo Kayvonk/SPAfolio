@@ -9,7 +9,7 @@ function PortfolioPage() {
     <div>
       <Container style={{ marginTop: 50 }}>
         <TitleCard> <h1> Portfolio </h1> </TitleCard>
-        <TitleCard> <h2> Clicking images will direct you to the deployed application! </h2> </TitleCard>
+        <TitleCard> <h2 className="portfolioText"> Clicking images will direct you to the deployed application! </h2> </TitleCard>
         <LinkCard><a href="https://github.com/Kayvonk/voyagr" class="col-sm-12 project-text" target="_blank" rel="noreferrer">
           <h3>Voyagr</h3>
         </a> </LinkCard>

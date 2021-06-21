@@ -19,13 +19,13 @@ export default class ProfileImage extends Component {
                     </Container>
                     {/* </Slide> */}
                 </Fade>
-                <Container>
+                <Container style={{ position: "relative" }}>
                     <Slide right cascade>
                         {/* <Fade right> */}
                         <p
                             className="slidingTextLine1"
                         > Full-stack Web Developer</p>
-
+                        <br />
                         {/* </Fade> */}
                         {/* <Fade right> */}
                         <p

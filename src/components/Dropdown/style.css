@@ -2,7 +2,7 @@
  { 
   height: 80px;
   width: 80px;
-  background-color: black !important;
+  background-color: #222222 !important;
 }
 
 @media (min-width: 768px) {
@@ -19,5 +19,5 @@
 }
 
 .fa-bars {
-  color: white;
+  color: lightgrey;
 }

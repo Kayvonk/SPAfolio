@@ -17,7 +17,7 @@ export const Navbar = () => {
                         Contact
                     </NavLink>
                 </NavMenu>
-                <BurgerMenu />
+                {/* <BurgerMenu /> */}
             </Nav>
         </>
     )
