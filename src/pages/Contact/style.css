@@ -2,19 +2,22 @@
   font-family: Arial, Helvetica, sans-serif;
     color: lightgrey;
     line-height: 1;
-
 }
 
 @media (max-width: 410px) { 
 .cardText, .contactText {
   font-size: large;
-  /* padding: 0rem;   */
 }
 }
 
 @media (min-width: 410px) { 
 .cardText, .contactText {
     font-size: x-large;
-  /* padding: 0 1rem;   */
 }
+}
+
+.footer-wrapper {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }

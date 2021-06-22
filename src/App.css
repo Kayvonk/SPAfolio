@@ -2,4 +2,6 @@ body {
   overflow-x: hidden; 
   background: linear-gradient(90deg, #222222 80%, rgb(48, 48, 48) 100%);
   background-repeat: repeat-y;
+  position: relative;
+  min-height: 100vh;
 }

@@ -5,6 +5,8 @@ import ContactCard from "../../components/ContactCard";
 import TitleCard from "../../components/TitleCard";
 import CardBtn from "../../components/CardBtn";
 import Flip from 'react-reveal/Flip';
+import Footer from "../../components/Footer";
+
 
 function ContactPage() {
   return (
@@ -25,6 +27,9 @@ function ContactPage() {
         </Flip>
       </Container>
       <CardBtn />
+      <div className="footer-wrapper">
+        <Footer />
+      </div>
     </div>
   );
 }

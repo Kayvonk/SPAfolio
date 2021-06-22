@@ -5,6 +5,7 @@ import TitleCard from "../../components/TitleCard";
 import ProfileImage from "../../components/ProfileImage";
 import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
+import Footer from "../../components/Footer";
 
 function HomePage() {
   return (
@@ -19,7 +20,9 @@ function HomePage() {
       </Container>
       <ProfileImage />
 
-      <Container style={{ marginTop: 900, marginBottom: 300 }}>
+      <Container
+        style={{ marginTop: 900, marginBottom: 300 }}
+      >
         <Rotate top left>
           <div className="col-sm left-text">
             <h2>About Me</h2>
@@ -42,6 +45,7 @@ function HomePage() {
         </Fade>
 
       </Container>
+      <Footer />
     </div >
   );
 }

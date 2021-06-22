@@ -3,6 +3,7 @@ import "./style.css";
 import Container from "../../components/Container";
 import TitleCard from "../../components/TitleCard";
 import LinkCard from "../../components/LinkCard";
+import Footer from "../../components/Footer";
 
 function PortfolioPage() {
   return (
@@ -65,6 +66,7 @@ function PortfolioPage() {
           src="assets/WeatherAppImgThumbnail.PNG" class="img-fluid rounded mx-auto d-block images"
           alt="WonderfulWeatherAppImgThumbnail" /></a>
       </Container>
+      <Footer />
     </div>
   );
 }
