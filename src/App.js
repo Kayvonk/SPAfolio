@@ -10,8 +10,7 @@ import Flip from 'react-reveal/Flip';
 import Footer from "./components/Footer";
 import ProfileImage from "./components/ProfileImage";
 import Fade from 'react-reveal/Fade';
-import Rotate from 'react-reveal/Rotate';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 
 

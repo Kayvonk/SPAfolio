@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Container from "../Container";
 import { HashLink as Link } from 'react-router-hash-link';
 
 function Footer() {
