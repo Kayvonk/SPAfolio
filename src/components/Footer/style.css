@@ -1,7 +1,18 @@
 /* ---------------Footer------------------------- */
 .icons {
-  margin: 0 .5rem;
-  transition: 0.3s;
+   transition: 0.3s;
+}
+
+@media (max-width: 360px) {
+.icons {
+ margin: 0 .5rem;
+  }
+}
+
+@media (min-width: 360px) {
+.icons {
+ margin: 0 1rem;
+  }
 }
 
 .icons:hover {
@@ -15,3 +26,12 @@
   margin-right: auto !important;
   margin-bottom: 1rem;
 }
+
+.upArrow {
+  width: 5rem;
+  display: flex;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  cursor: pointer;
+}
+

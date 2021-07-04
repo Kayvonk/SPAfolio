@@ -1,10 +1,13 @@
 .card {
-  background: transparent !important;
+position: relative !important;
+bottom: 2rem;
+  background: #353535 !important;
   width: fit-content !important;
   text-align: center;
-  margin-top: 2rem;
-  padding: 2rem;
-  box-shadow: 0 15px 20px rgba(255, 255, 255, 0.541), 0 3px 6px rgba(235, 235, 235, 0.23);
+  display: flex;
+  padding: 1.5rem 2rem 1.0rem 2rem !important;
+  border: none;
+  box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.541), 0 3px 6px rgba(235, 235, 235, 0.23);
   font-family:Arial, Helvetica, sans-serif;
-  border-radius: 24px !important;
+  border-radius: 12px !important;
 }

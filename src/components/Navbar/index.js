@@ -1,20 +1,20 @@
 import React from 'react'
-import { Nav, NavLink, NavMenu } from "./NavbarElements"
+import { Nav, NavMenu, Link } from "./NavbarElements"
 
 export const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavMenu>
-                    <NavLink to="/" exact activeStyle={{ textDecoration: "none", color: "#3e81c9" }}>
-                        Home
-                    </NavLink>
-                    <NavLink to="/portfolio" activeStyle={{ textDecoration: "none", color: "#3e81c9" }}>
+                    <Link smooth to="#about" exact activeStyle={{ textDecoration: "none", color: "#3e81c9" }}>
+                        About
+                    </Link>
+                    <Link smooth to="#portfolio" activeStyle={{ textDecoration: "none", color: "#3e81c9" }}>
                         Portfolio
-                    </NavLink>
-                    <NavLink to="/contact" activeStyle={{ textDecoration: "none", color: "#3e81c9" }}>
+                    </Link>
+                    <Link smooth to="#contact" activeStyle={{ textDecoration: "none", color: "#3e81c9" }}>
                         Contact
-                    </NavLink>
+                    </Link>
                 </NavMenu>
             </Nav>
         </>

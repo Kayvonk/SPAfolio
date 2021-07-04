@@ -10,11 +10,12 @@ This webpage serves as a home for information pertaining to past projects as wel
 
 ## Usage
 
-Deployed Application: https://penultimate-reactfolio.herokuapp.com/
+Deployed Application: https://kayvon-kazemini.netlify.app
 
-![HomePageThumbnail](./public/assets/reactPortfolioHomepagethumbnail.PNG)
-![PortfolioThumbnail](./public/assets/reactPortfolioPortfoliopagethumbnail.PNG)
-![ContactThumbnail](./public/assets/reactPortfolioContactpagethumbnail.PNG)
+![HomePageThumbnail](./public/assets/SPAfolioTopThumbnail.PNG)
+![AboutPageThumbnail](./public/assets/SPAfolioAboutThumbnail.PNG)
+![PortfolioThumbnail](./public/assets/SPAfolioPortfolioThumbnail.PNG)
+![ContactThumbnail](./public/assets/SPAfolioContactThumbnail.PNG)
 
 ## Questions
 Follow me on [Github](https://github.com/Kayvonk).

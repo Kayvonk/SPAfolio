@@ -5,3 +5,425 @@ body {
   position: relative;
   min-height: 100vh;
 }
+
+.projectWrapper{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-text {
+  color: #17A2B8 !important;
+}
+.project-text:hover {
+  text-decoration: none !important;
+  color: #1ebcd4 !important;
+}
+
+/* -------- */
+
+.downArrow{
+  width: 5rem;
+  display: flex;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  cursor: pointer;
+}
+
+/* ------------About me text ---------------- */
+
+.aboutBackground {
+  background-color: #353535;
+
+}
+
+.left-text {
+  color: lightgrey;
+  text-align: justify;
+}
+@media (max-width: 360px) {
+.left-text  {
+  font-size: 13pt;
+  }
+}
+
+@media (min-width: 360px) {
+.left-text  {
+  font-size: 17pt;  }
+}
+
+.about-me-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .about-me-image {
+  width: 30rem;
+  }
+}
+
+/* ------------Profile square ---------------- */
+
+@media (max-width: 360px) {
+.profileSquare {
+  position: absolute;
+  border:5px solid lightgrey;
+  width: 10rem;
+  }
+}
+
+@media (min-width: 360px) {
+.profileSquare {
+  position: absolute;
+  border:5px solid lightgrey;
+  width: 12rem;
+  }
+}
+
+@media (min-width: 410px) {
+.profileSquare {
+  width: 14rem;
+  }
+}
+
+@media (min-width: 425px) {
+.profileSquare {
+  width: 14rem;
+  }
+}
+
+/* ---------------- */
+
+@media (min-width: 576px) { 
+
+.profileSquare {
+  width: 16rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+.profileSquare {
+  width: 16rem;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.profileSquare {
+  width: 18rem;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+.profileSquare {
+  width: 18rem;
+  }
+}
+
+
+  /* ------------------Line 1 text------------------------ */
+
+.slidingTextLine1, .slidingTextLine2 {
+  color: lightgrey;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+@media (max-width: 360px) {
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 14px;
+  }
+}
+
+@media (min-width: 360px) {
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 16px;
+  }
+}
+
+@media (min-width: 410px) {
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 18px;
+  }
+}
+@media (min-width: 425px) {
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 18px;
+  }
+}
+
+/* ---------------- */
+
+
+@media (min-width: 576px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 25px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 30px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 35px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .slidingTextLine1, .slidingTextLine2 {
+  font-weight: 600;
+  font-size: 40px;
+  }
+}
+
+/* ------------------------------------------- */
+
+@media (max-width: 280px) {
+.slidingTextLine1 {
+  position: absolute;
+  margin-top: 60%;
+  margin-left: 10%;
+
+  }
+}
+@media (min-width: 280px) {
+.slidingTextLine1 {
+  position: absolute;
+  margin-top: 60%;
+  margin-left: 10%;
+  }
+}
+
+
+@media (min-width: 360px) {
+.slidingTextLine1 {
+  position: absolute;
+  margin-top: 62%;
+  margin-left: 10%;
+  }
+}
+
+@media (min-width: 410px) {
+.slidingTextLine1 {
+  margin-top: 62%;
+  margin-left: 10%;
+  }
+}
+
+@media (min-width: 425px) {
+.slidingTextLine1 {
+  margin-top: 57%;
+  margin-left: 10%;
+  }
+}
+
+/* ---------------- */
+
+@media (min-width: 576px) { 
+
+.slidingTextLine1 {
+  margin-top: 48%;
+  margin-left: 10%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+.slidingTextLine1 {
+  margin-top: 35%;
+  margin-left: 10%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.slidingTextLine1 {
+  margin-top: 30%;
+  margin-left: 15%;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+.slidingTextLine1 {
+  margin-top: 25%;
+  margin-left: 15%;
+  }
+}
+
+@media (min-width: 1400px) { 
+.slidingTextLine1 {
+  margin-top: 20%;
+  margin-left: 15%;
+  }
+}
+
+/* ------------------Line 2 text------------------------ */
+
+@media (max-width: 280px) {
+.slidingTextLine2 {
+  position: absolute;
+  margin-top: 65%;
+  margin-left: 15%;
+  }
+}
+
+@media (min-width: 280px) {
+.slidingTextLine2 {
+  position: absolute;
+  margin-top: 65%;
+  margin-left: 15%;
+  }
+}
+
+@media (min-width: 360px) {
+.slidingTextLine2 {
+  position: absolute;
+  margin-top: 69%;
+  margin-left: 15%;
+  }
+}
+
+@media (min-width: 410px) {
+.slidingTextLine2 {
+  margin-top: 69%;
+  margin-left: 15%;
+  }
+}
+
+@media (min-width: 425px) {
+.slidingTextLine2 {
+  margin-top: 64%;
+  margin-left: 15%;
+  }
+}
+
+/* ----------------------- */
+
+@media (min-width: 576px) { 
+
+.slidingTextLine2 {
+  margin-top: 55%;
+  margin-left: 15%;
+  }
+  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+.slidingTextLine2 {
+  margin-top: 40%;
+  margin-left: 15%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.slidingTextLine2 {
+  margin-top: 35%;
+  margin-left: 20%;;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+.slidingTextLine2 {
+  margin-top: 30%;
+  margin-left: 20%;
+  }
+}
+
+@media (min-width: 1400px) { 
+.slidingTextLine2 {
+  margin-top: 25%;
+  margin-left: 20%;
+  }
+}
+
+
+/* --------- */
+
+.images {
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.center{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+@media (max-width: 410px) { 
+.portfolioText {
+  font-size: large;
+  padding: 0rem;  }
+}
+
+@media (min-width: 410px) { 
+.portfolioText {
+  font-size: x-large;
+  padding: 0 1rem;  }
+}
+
+
+/* ------------ */
+
+.cardText{
+  font-family: Arial, Helvetica, sans-serif;
+    color: lightgrey;
+    line-height: .8;
+}
+
+@media (max-width: 410px) { 
+.cardText, .contactText {
+  font-size: large;
+}
+}
+
+@media (min-width: 410px) { 
+.cardText, .contactText {
+    font-size: x-large;
+}
+}
+
+/* .footer-wrapper {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+} */
+
+
+/* -------- */
+

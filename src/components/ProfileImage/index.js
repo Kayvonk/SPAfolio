@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Container from "../Container";
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
+import './style.css'
 
 export default class ProfileImage extends Component {
 
@@ -17,12 +18,25 @@ export default class ProfileImage extends Component {
                     </Container>
                 </Fade>
                 <Container>
-                    <Slide right cascade>
-                        <p className="slidingTextLine1"
-                        > Full-stack Web Developer</p>
-                        <br />
-                        <p className="slidingTextLine2"
-                        >with a passion for innovation.</p>
+                    <div className="slidingTextLine1"
+                    >
+                        <Slide right cascade>
+                            <div>
+                                Hi, my name is
+                            </div>
+                        </Slide>
+
+                        <Slide right cascade>
+                            <span className="wordGradient"> Kayvon</span>
+
+                        </Slide>
+                        .</div>
+                    <br />
+
+                    <Slide left cascade>
+                        <div className="slidingTextLine2"
+                        >~Full-stack Web Developer</div>
+
                     </Slide>
                 </Container>
             </div>

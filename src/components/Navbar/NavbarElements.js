@@ -1,4 +1,4 @@
-import { NavLink as Link } from "react-router-dom";
+import { HashLink as NavLink } from 'react-router-hash-link';
 import styled from "styled-components"
 
 
@@ -10,7 +10,7 @@ justify-content: space-between;
 z-index: 10;
 `;
 
-export const NavLink = styled(Link)`
+export const Link = styled(NavLink)`
 font-size: larger ;
 color: lightgray;
 display: flex;
