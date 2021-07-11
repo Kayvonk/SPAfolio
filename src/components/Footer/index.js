@@ -19,6 +19,9 @@ function Footer() {
         <div className="col-xs-2 icons"><a href="https://twitter.com/KayvonK" target="_blank" rel="noreferrer"><img
           src="assets/iconfinder_1_Twitter_colored_svg_5296514.png" alt="twitter-icon" /></a></div>
       </footer>
+      <br />
+      <a className="attribution" href="https://www.freepik.com/vectors/background">Background vector created by starline - www.freepik.com</a>
+      <br />
     </>
   );
 }
