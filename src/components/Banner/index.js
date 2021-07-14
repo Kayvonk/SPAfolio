@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../Container";
 import Slide from "react-reveal/Slide";
 import ProjectBtn from "../ProjectBtn";
-import { Link } from "../Navbar/NavbarElements";
+import { LinkBtn } from "../Navbar/NavbarElements";
 import "./style.css";
 
 function Banner() {
@@ -19,9 +19,9 @@ function Banner() {
           </div>
         </div>
         <Container className="about-btn-container">
-          <Link smooth to="#about" exact>
+          <LinkBtn smooth to="#about" exact>
             <ProjectBtn name="about-btn btn btn-lg" title="Know more" />
-          </Link>
+          </LinkBtn>
         </Container>
       </Slide>
     </Container>

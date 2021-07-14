@@ -191,38 +191,44 @@ body {
   font-family: "Open Sans", sans-serif;
   display: flex;
   line-height: 2;
+  position: absolute;
 }
 @media (max-width: 280px) {
   .slidingTextLine {
+    margin-top: 6vh;
     font-weight: 600;
-    font-size: 9px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: 280px) {
   .slidingTextLine {
+    margin-top: 5vh;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: 360px) {
   .slidingTextLine {
+    margin-top: 4vh;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 410px) {
   .slidingTextLine {
+    margin-top: 4vh;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 425px) {
   .slidingTextLine {
+    margin-top: 4vh;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -230,23 +236,18 @@ body {
 
 @media (min-width: 576px) {
   .slidingTextLine {
+    margin-top: 3vh;
     font-weight: 600;
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 576px) {
-  .slidingTextLine {
-    font-weight: 600;
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .slidingTextLine {
+    margin-top: 0;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -254,7 +255,7 @@ body {
 @media (min-width: 992px) {
   .slidingTextLine {
     font-weight: 600;
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
@@ -267,65 +268,6 @@ body {
 }
 
 /* ------------------------------------------- */
-
-@media (max-width: 280px) {
-  .slidingTextLine {
-    position: absolute;
-  }
-}
-@media (min-width: 280px) {
-  .slidingTextLine {
-    position: absolute;
-  }
-}
-
-@media (min-width: 360px) {
-  .slidingTextLine {
-    position: absolute;
-  }
-}
-
-@media (min-width: 410px) {
-  .slidingTextLine {
-  }
-}
-
-@media (min-width: 425px) {
-  .slidingTextLine {
-  }
-}
-
-/* ---------------- */
-
-@media (min-width: 576px) {
-  .slidingTextLine {
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .slidingTextLine {
-  }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .slidingTextLine {
-  }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .slidingTextLine {
-  }
-}
-
-@media (min-width: 1400px) {
-  .slidingTextLine {
-  }
-}
-
-/* --------- */
 
 .images {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
