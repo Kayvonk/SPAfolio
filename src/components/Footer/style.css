@@ -1,23 +1,23 @@
 /* ---------------Footer------------------------- */
 .icons {
-   transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 360px) {
-.icons {
- margin: 0 .5rem;
+  .icons {
+    margin: 0 0.5rem;
   }
 }
 
 @media (min-width: 360px) {
-.icons {
- margin: 0 1rem;
+  .icons {
+    margin: 0 1rem;
   }
 }
 
 .icons:hover {
   transform: translate(0, -10px);
- }
+}
 
 .footer {
   display: flex;
@@ -34,4 +34,3 @@
   margin-right: auto !important;
   cursor: pointer;
 }
-

@@ -10,7 +10,7 @@ function Banner() {
     <Container className="sliding-content">
       <Slide left>
         <div className="slidingTextLine">
-          <div>
+          <div className="slidingText">
             Hi, my name is
             <span className="wordGradient"> Kayvon</span>
             .

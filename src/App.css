@@ -6,17 +6,19 @@ body {
   overflow-x: hidden;
   background-color: #001621 !important;
   background-image: url("./constBackground.png");
-  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-size: calc(max(100%, 100vh)); */
   background-position-x: center;
-  /* background-position: center top; */
   z-index: -1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+@font-face {
+  font-family: "coolvetica rg";
+  src: local("coolvetica rg"), url(./fonts/coolveticarg.ttf) format("truetype");
 }
 
 @media (max-width: 576px) {
@@ -203,12 +205,13 @@ body {
   color: lightgrey;
   font-family: "Open Sans", sans-serif;
   display: flex;
-  line-height: 2;
+  line-height: 1.8;
   position: absolute;
 }
+
 @media (max-width: 280px) {
   .slidingTextLine {
-    margin-top: 6vh;
+    margin-top: 5vh;
     font-weight: 600;
     font-size: 15px;
   }
