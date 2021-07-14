@@ -1,85 +1,134 @@
-html {height:100% !important} 
-
-
-body {
-  overflow-x: hidden; 
-  background-color: #001621 !important;
-  top: 0;
-  background-image: url("./lowPolyBackground.png");
-    /* background-attachment:fixed; */
-  background-repeat: no-repeat;
-  background-size: calc(max(100%, 1500px));
-  background-position-x: center;
-  /* background-position: center top; */
- z-index: -1;
- min-height:1500px;
+html {
+  height: 100% !important;
 }
 
+body {
+  overflow-x: hidden;
+  background-color: #001621 !important;
+  background-image: url("./constBackground.png");
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: calc(max(100%, 100vh)); */
+  background-position-x: center;
+  /* background-position: center top; */
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
-.banner
+@media (max-width: 576px) {
+  #about,
+  #portfolio {
+    font-size: 24pt;
+  }
+}
 
-.projectWrapper{
+@media (min-width: 576px) {
+  #about,
+  #portfolio {
+    font-size: 40pt;
+  }
+}
+
+.projectWrapper {
+  padding: 0 5rem !important;
+}
+
+@media (max-width: 360px) {
+  h3 {
+    font-size: small !important;
+  }
+}
+
+@media (min-width: 360px) {
+  h3 {
+    font-size: large !important;
+  }
+}
+
+@media (min-width: 576px) {
+  h3 {
+    font-size: x-large !important;
+  }
+}
+
+@media (min-width: 992px) {
+  h3 {
+    font-size: larger !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  h3 {
+    font-size: x-large !important;
+  }
+}
+
+.banner .projectWrapper {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
 
-.attribution{
+.attribution {
   color: #d2d2d2;
   display: flex;
   justify-content: center;
   font-family: monospace;
 }
 
-.attribution:hover{
+.attribution:hover {
   text-decoration: none !important;
-  color: #3E75C3 !important;
+  color: #3e75c3 !important;
 }
 @media (max-width: 280px) {
-.attribution  {
-  font-size: 6pt;
+  .attribution {
+    font-size: 6pt;
   }
 }
 
 @media (min-width: 280px) {
-.attribution  {
-  font-size: 6pt;
+  .attribution {
+    font-size: 6pt;
   }
 }
 
 @media (min-width: 360px) {
-.attribution  {
-  font-size: 8pt;
+  .attribution {
+    font-size: 8pt;
   }
 }
 
 @media (min-width: 425px) {
-.attribution  {
-  font-size: 10pt;
+  .attribution {
+    font-size: 10pt;
   }
 }
 
 @media (min-width: 576px) {
-.attribution  {
-  font-size: 12pt;
+  .attribution {
+    font-size: 12pt;
   }
 }
 .project-text {
-  color: #00AAAA !important;
+  color: #00aaaa !important;
 }
-.project-text:hover{
+
+.project-text:hover {
   text-decoration: none !important;
-  color: #00D4D0 !important;
+  color: #00d4d0 !important;
 }
 
 .wordGradient {
-  color:#00D4D0
+  color: #00d4d0;
 }
-
 
 /* -------- */
 
-.downArrow{
+.downArrow {
   width: 5rem;
   display: flex;
   margin-left: auto !important;
@@ -100,8 +149,7 @@ body {
 /* ------------About me text ---------------- */
 
 .aboutBackground {
-  background-color: #00444B;
-
+  background-color: #00444b;
 }
 
 .left-text {
@@ -109,291 +157,185 @@ body {
   text-align: justify;
 }
 @media (max-width: 360px) {
-.left-text  {
-  font-size: 13pt;
+  .left-text {
+    font-size: 13pt;
   }
 }
 
 @media (min-width: 360px) {
-.left-text  {
-  font-size: 17pt;  }
+  .left-text {
+    font-size: 17pt;
+  }
 }
 
 .about-me-image {
   width: 100%;
-border-radius: 50px;
+  border-radius: 50px;
 }
 
 @media screen and (min-width: 410px) {
   .about-me-image {
-  width: 100%
+    width: 100%;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .about-me-image {
-  width: 25rem;
+    width: 25rem;
   }
 }
-  /* ------------------Line 1 text------------------------ */
+/* ------------------Line 1 text------------------------ */
 
-.slidingTextLine1, .slidingTextLine2 {
+.slidingTextLine {
   color: lightgrey;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  line-height: 2;
 }
 @media (max-width: 280px) {
-.slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 9px;
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 9px;
   }
 }
 
 @media (min-width: 280px) {
-.slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 14px;
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 360px) {
-  .slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 16px;
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 410px) {
-  .slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 18px;
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 18px;
   }
 }
 @media (min-width: 425px) {
-  .slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 20px;
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 20px;
   }
 }
 
 /* ---------------- */
 
-
-@media (min-width: 576px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 20px;
+@media (min-width: 576px) {
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 20px;
   }
 }
 
-@media (min-width: 576px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 25px;
+@media (min-width: 576px) {
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 25px;
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 30px;
+@media (min-width: 768px) {
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 30px;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 35px;
+@media (min-width: 992px) {
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 35px;
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  .slidingTextLine1, .slidingTextLine2 {
-  font-weight: 600;
-  font-size: 40px;
+@media (min-width: 1200px) {
+  .slidingTextLine {
+    font-weight: 600;
+    font-size: 40px;
   }
 }
 
 /* ------------------------------------------- */
 
 @media (max-width: 280px) {
-.slidingTextLine1 {
-  position: absolute;
- margin-top: 75%;
-  margin-left: 5%;
-
+  .slidingTextLine {
+    position: absolute;
   }
 }
 @media (min-width: 280px) {
-.slidingTextLine1 {
-  position: absolute;
- margin-top: 75%;
-  margin-left: 5%;
+  .slidingTextLine {
+    position: absolute;
   }
 }
 
-
 @media (min-width: 360px) {
-.slidingTextLine1 {
-  position: absolute;
- margin-top: 55%;
-  margin-left: 5%;
+  .slidingTextLine {
+    position: absolute;
   }
 }
 
 @media (min-width: 410px) {
-.slidingTextLine1 {
- margin-top: 55%;
-  margin-left: 5%;
+  .slidingTextLine {
   }
 }
 
 @media (min-width: 425px) {
-.slidingTextLine1 {
- margin-top: 50%;
-  margin-left: 5%;
+  .slidingTextLine {
   }
 }
 
 /* ---------------- */
 
-@media (min-width: 576px) { 
-
-.slidingTextLine1 {
- margin-top: 35%;
-  margin-left: 0%;
+@media (min-width: 576px) {
+  .slidingTextLine {
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
-.slidingTextLine1 {
- margin-top: 25%;
-  margin-left: 0%;
+@media (min-width: 768px) {
+  .slidingTextLine {
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
-.slidingTextLine1 {
-  margin-top: 20%;
-  margin-left: 3%;
+@media (min-width: 992px) {
+  .slidingTextLine {
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-.slidingTextLine1 {
-  margin-top: 15%;
-  margin-left: 3%;
+@media (min-width: 1200px) {
+  .slidingTextLine {
   }
 }
 
-@media (min-width: 1400px) { 
-.slidingTextLine1 {
-  margin-top: 15%;
-  margin-left: 0%;
+@media (min-width: 1400px) {
+  .slidingTextLine {
   }
 }
-
-/* ------------------Line 2 text------------------------ */
-
-@media (max-width: 280px) {
-.slidingTextLine2 {
-  position: absolute;
-  margin-top: 80%;
-  margin-left: 10%;
-  }
-}
-
-@media (min-width: 280px) {
-.slidingTextLine2 {
-  position: absolute;
-  margin-top: 80%;
-  margin-left: 10%;
-  }
-}
-
-@media (min-width: 360px) {
-.slidingTextLine2 {
-  position: absolute;
-  margin-top: 60%;
-  margin-left: 10%;
-  }
-}
-
-@media (min-width: 410px) {
-.slidingTextLine2 {
-  margin-top: 60%;
-  margin-left: 10%;
-  }
-}
-
-@media (min-width: 425px) {
-.slidingTextLine2 {
-  margin-top: 55%;
-  margin-left: 10%;
-  }
-}
-
-/* ----------------------- */
-
-@media (min-width: 576px) { 
-
-.slidingTextLine2 {
-  margin-top: 40%;
-  margin-left: 5%;
-  }
-  }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
-.slidingTextLine2 {
-  margin-top: 30%;
-  margin-left: 5%;
-  }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
-.slidingTextLine2 {
-  margin-top: 25%;
-  margin-left: 8%;;
-  }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-.slidingTextLine2 {
-  margin-top: 20%;
-  margin-left: 8%;
-  }
-}
-
-@media (min-width: 1400px) { 
-.slidingTextLine2 {
-  margin-top: 20%;
-  margin-left: 5%;
-  }
-}
-
 
 /* --------- */
 
 .images {
-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.center{
+.project-container {
+  margin: 0 2rem;
+}
+
+.center {
   text-align: center;
   display: block;
   justify-content: center;
@@ -402,45 +344,53 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   width: 100%;
 }
 
-@media (max-width: 410px) { 
-.portfolioText {
-  font-size: large;
-  padding: 0rem;  }
+@media (max-width: 410px) {
+  .portfolioText {
+    font-size: large;
+    padding: 0rem;
+  }
 }
 
-@media (min-width: 410px) { 
-.portfolioText {
-  font-size: x-large;
-  padding: 0 1rem;  }
+@media (min-width: 410px) {
+  .portfolioText {
+    font-size: x-large;
+    padding: 0 1rem;
+  }
 }
-
 
 /* ------------ */
 
-.cardText{
+.cardText {
   font-family: Arial, Helvetica, sans-serif;
-    color: lightgrey;
-    line-height: .8;
+  color: lightgrey;
+  line-height: 0.8;
 }
 
-@media (max-width: 410px) { 
-.cardText, .contactText {
-  font-size: large;
-}
+@media (max-width: 410px) {
+  .cardText,
+  .contactText {
+    font-size: large;
+  }
 }
 
-@media (min-width: 410px) { 
-.cardText, .contactText {
+@media (min-width: 410px) {
+  .cardText,
+  .contactText {
     font-size: x-large;
+  }
 }
-}
-
-/* .footer-wrapper {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-} */
-
 
 /* -------- */
 
+@media (min-width: 992px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 10rem;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
