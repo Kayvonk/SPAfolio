@@ -240,36 +240,36 @@ function App() {
                   {" "}
                   <div className="projectWrapper">
                     <a
-                      href="https://github.com/Kayvonk/DailyPlannerForTheWin"
+                      href="https://github.com/Kayvonk/AXD"
                       className="col-sm-12 project-text"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <h3>Daily Planner For The Win</h3>
+                      <h3>AnimeXD</h3>
                     </a>
                   </div>
                 </LinkCard>
                 <a
                   className="center"
-                  href="https://kayvonk.github.io/DailyPlannerForTheWin/"
+                  href="https://axd.netlify.app/home"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
-                    src="assets/DailyPlannerImgThumbnail.PNG"
+                    src="assets/animexdhomethumbnail.PNG"
                     className="img-fluid images"
-                    alt="DailyPlannerImgThumbnail"
+                    alt="AnimeXDThumbnail"
                   />
                 </a>
                 <Container className="btn-container">
                   <ProjectBtn
                     name="live-btn btn btn-lg"
-                    link="https://kayvonk.github.io/DailyPlannerForTheWin/"
+                    link="https://axd.netlify.app/home"
                     title="Live"
                   />
                   <ProjectBtn
                     name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/DailyPlannerForTheWin"
+                    link="https://github.com/Kayvonk/AXD"
                     title="Code"
                   />
                 </Container>
@@ -332,36 +332,36 @@ function App() {
                   {" "}
                   <div className="projectWrapper">
                     <a
-                      href="https://github.com/Kayvonk/WonderfulWeatherApp"
+                      href="https://github.com/Kayvonk/DailyPlannerForTheWin"
                       className="col-sm-12 project-text"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <h3 className="project-header"> Wonderful Weather App</h3>
+                      <h3>Daily Planner For The Win</h3>
                     </a>
                   </div>
                 </LinkCard>
                 <a
                   className="center"
-                  href="https://kayvonk.github.io/WonderfulWeatherApp/"
+                  href="https://kayvonk.github.io/DailyPlannerForTheWin/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
-                    src="assets/WeatherAppImgThumbnail.PNG"
+                    src="assets/DailyPlannerImgThumbnail.PNG"
                     className="img-fluid images"
-                    alt="WonderfulWeatherAppImgThumbnail"
+                    alt="DailyPlannerImgThumbnail"
                   />
                 </a>
                 <Container className="btn-container">
                   <ProjectBtn
                     name="live-btn btn btn-lg"
-                    link="https://kayvonk.github.io/WonderfulWeatherApp/"
+                    link="https://kayvonk.github.io/DailyPlannerForTheWin/"
                     title="Live"
                   />
                   <ProjectBtn
                     name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/WonderfulWeatherApp"
+                    link="https://github.com/Kayvonk/DailyPlannerForTheWin"
                     title="Code"
                   />
                 </Container>
