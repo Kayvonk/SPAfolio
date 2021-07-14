@@ -256,7 +256,7 @@ function App() {
                   rel="noreferrer"
                 >
                   <img
-                    src="assets/animexdhomethumbnail.PNG"
+                    src="assets/animexdthumbnail.PNG"
                     className="img-fluid images"
                     alt="AnimeXDThumbnail"
                   />
