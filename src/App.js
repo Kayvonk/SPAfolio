@@ -46,7 +46,7 @@ function App() {
                   display: "flex",
                   justifyContent: "center",
                   paddingTop: 70,
-                  marginBottom: 100,
+                  marginBottom: 10,
                   fontFamily: "monospace",
                 }}
               >
@@ -54,7 +54,7 @@ function App() {
               </h2>
               <Fade right>
                 <img
-                  className="about-me-image img-fluid float-sm-right mb-sm-3 ml-sm-3"
+                  className="about-me-image img-fluid float-sm-right ml-sm-3"
                   src="assets/profile.jpg"
                   alt="about-me"
                 />

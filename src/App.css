@@ -164,24 +164,37 @@ body {
 
 @media (min-width: 360px) {
   .left-text {
+    font-size: 14pt;
+  }
+}
+
+@media (min-width: 992px) {
+  .left-text {
+    font-size: 15pt;
+  }
+}
+
+@media (min-width: 1200px) {
+  .left-text {
     font-size: 17pt;
   }
 }
 
 .about-me-image {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 40px;
 }
 
-@media screen and (min-width: 410px) {
+@media screen and (max-width: 768px) {
   .about-me-image {
     width: 100%;
+    padding: 0 2rem !important;
   }
 }
 
 @media screen and (min-width: 768px) {
   .about-me-image {
-    width: 25rem;
+    width: 26rem;
   }
 }
 /* ------------------Line 1 text------------------------ */
