@@ -240,7 +240,7 @@ function App() {
                   {" "}
                   <div className="projectWrapper">
                     <a
-                      href="https://github.com/Kayvonk/AXD"
+                      href="https://github.com/Kayvonk/AXD-redux"
                       className="col-sm-12 project-text"
                       target="_blank"
                       rel="noreferrer"
@@ -251,12 +251,12 @@ function App() {
                 </LinkCard>
                 <a
                   className="center"
-                  href="https://axd.netlify.app/home"
+                  href="https://ardx.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
-                    src="assets/animexdthumbnail.PNG"
+                    src="assets/ardxhomethumbnail.PNG"
                     className="img-fluid images"
                     alt="AnimeXDThumbnail"
                   />
@@ -264,12 +264,12 @@ function App() {
                 <Container className="btn-container">
                   <ProjectBtn
                     name="live-btn btn btn-lg"
-                    link="https://axd.netlify.app/home"
+                    link="https://ardx.netlify.app/"
                     title="Live"
                   />
                   <ProjectBtn
                     name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/AXD"
+                    link="https://github.com/Kayvonk/AXD-redux"
                     title="Code"
                   />
                 </Container>
