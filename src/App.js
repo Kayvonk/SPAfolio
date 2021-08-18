@@ -291,32 +291,31 @@ function App() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <h3> Job Aid</h3>
+                      <h3> AmazonJS</h3>
                     </a>
                   </div>
                 </LinkCard>
                 <a
                   className="center"
-                  href="https://whispering-eyrie-33529.herokuapp.com/"
+                  href="https://kshopjs.web.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {" "}
                   <img
-                    src="assets/jobaidThumbnail.PNG"
+                    src="assets/kshophomepagethumbnail.PNG"
                     className="img-fluid images"
-                    alt="JobAideImgThumbnail"
+                    alt="AmazonJSImgThumbnail"
                   />
                 </a>
                 <Container className="btn-container">
                   <ProjectBtn
                     name="live-btn btn btn-lg"
-                    link="https://whispering-eyrie-33529.herokuapp.com/"
+                    link="https://kshopjs.web.app/"
                     title="Live"
                   />
                   <ProjectBtn
                     name="source-btn btn btn-lg"
-                    link="https://github.com/Koffidanh/job-aid"
+                    link="https://github.com/Kayvonk/AmazonJS"
                     title="Code"
                   />
                 </Container>
