@@ -352,3 +352,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.opaque {
+  opacity: 0;
+}

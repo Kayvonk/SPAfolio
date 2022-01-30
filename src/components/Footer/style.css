@@ -30,7 +30,12 @@
 .upArrow {
   width: 5rem;
   display: flex;
+  /* justify-content: center; */
   margin-left: auto !important;
   margin-right: auto !important;
   cursor: pointer;
+}
+
+.arrowContainer{
+  width: 100%;
 }

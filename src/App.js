@@ -38,7 +38,7 @@ function App() {
           <Banner />
           <div className="aboutBackground">
             <Container
-              style={{ marginTop: 1100, marginBottom: 200, paddingBottom: 30 }}
+              style={{ marginTop: 1100, marginBottom: 150 }}
             >
               <h2
                 id="about"
@@ -61,31 +61,23 @@ function App() {
               </Fade>
               <Fade left>
                 <div className="col-sm left-text">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With a background in the arts
-                  and sciences, and a strong foundation in web development from
-                  the Coding Bootcamp at the University of Utah, my aim has been
-                  developing fun and immersive applications. This is aided by
-                  proficiencies in JavaScript, React, jQuery, Node.js, CSS3, and
-                  HTML5. Additionally, working with softwares such as Unity,
-                  Blender, and GIMP has provided a basis for image editing and
-                  graphic designing. All of these skills culminate to form a
-                  base of knowledge from which I tackle any project. Combined
-                  with determination and creativity, every project becomes an
-                  opportunity to put forth my best work.
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Full Stack Web Developer, founder of Unison Web Services, and cofounder of the Voyagr app, my aim is building fun and immersive web applications.  Completing the University of Utah’s Coding Bootcamp has helped to cultivate proficiencies in JavaScript, React, MongoDB, Node.js, CSS3, and
+                  HTML5. Additionally, programs such as Unity, Blender, and GIMP also assist in creating innovative projects.  While collaborating with others, thoughtfulness and diligence are key attributes that I contribute throughout any project.
                 </div>
               </Fade>
-              <Fade bottom>
+              {/* <Fade bottom>
                 <CardBtn />
-              </Fade>
+              </Fade> */}
               <br />
-              <Link smooth to="#portfolio">
-                <img
-                  className="upArrow"
-                  src="assets/downArrow.png"
-                  alt="downArrow"
-                />
-              </Link>
             </Container>
+            <Link smooth to="#portfolio" className="arrowContainer">
+              <img
+                className="upArrow"
+                src="assets/downArrow.png"
+                alt="downArrow"
+              />
+            </Link>
           </div>
           <Container style={{ marginTop: 50 }}>
             <TitleCard>
@@ -104,9 +96,53 @@ function App() {
                 className="project-container"
               >
                 <LinkCard>
+                  {" "}
                   <div className="projectWrapper">
                     <a
-                      href="https://github.com/Kayvonk/voyagr"
+                      href="https://kshopjs.web.app/"
+                      className="col-sm-12 project-text"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <h3> AmazonJS</h3>
+                    </a>
+                  </div>
+                </LinkCard>
+                <a
+                  className="center"
+                  href="https://kshopjs.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="assets/kshophomepagethumbnail.PNG"
+                    className="img-fluid images"
+                    alt="AmazonJSImgThumbnail"
+                  />
+                </a>
+                <Container className="btn-container">
+                  <ProjectBtn
+                    name="live-btn btn btn-lg"
+                    link="https://kshopjs.web.app/"
+                    title="Live"
+                  />
+                  <ProjectBtn
+                    name="source-btn btn btn-lg"
+                    link="https://github.com/Kayvonk/AmazonJS"
+                    title="Code"
+                  />
+                </Container>
+              </Container>
+            </Fade>
+            <Fade right>
+              <Container
+                style={{ marginTop: 40, marginBottom: 100 }}
+                className="project-container"
+              >
+                <LinkCard>
+                  <div className="projectWrapper">
+                    <a
+                      href="https://voyagr.netlify.app/"
                       className="col-sm-12 project-text"
                       target="_blank"
                       rel="noreferrer"
@@ -133,15 +169,15 @@ function App() {
                     link="https://voyagr.netlify.app/"
                     title="Live"
                   />
-                  <ProjectBtn
+                  {/* <ProjectBtn
                     name="source-btn btn btn-lg"
                     link="https://github.com/Kayvonk/voyagr"
                     title="Code"
-                  />
+                  /> */}
                 </Container>
               </Container>
             </Fade>
-            <Fade right>
+            {/* <Fade right>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
                 className="project-container"
@@ -183,10 +219,55 @@ function App() {
                   />
                 </Container>
               </Container>
-            </Fade>
+            </Fade> */}
           </Container>
           <Container className="grid-container">
             <Fade left>
+              <Container
+                style={{ marginTop: 40, marginBottom: 100 }}
+                className="project-container"
+              >
+                <LinkCard>
+                  {" "}
+                  <div className="projectWrapper">
+                    <a
+                      href="http://www.unisonwebservices.com"
+                      className="col-sm-12 project-text"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <h3>Unison Web Services</h3>
+                    </a>
+                  </div>
+                </LinkCard>
+                <a
+                  className="center"
+                  href="http://www.unisonwebservices.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <img
+                    src="assets/uwsthumbnailsm.PNG"
+                    className="img-fluid images"
+                    alt="Unison Web Services"
+                  />
+                </a>
+                <Container className="btn-container">
+                  <ProjectBtn
+                    name="live-btn btn btn-lg"
+                    link="http://www.unisonwebservices.com"
+                    title="Live"
+                  />
+                  {/* <ProjectBtn
+                    name="source-btn btn btn-lg"
+                    link="https://github.com/Kayvonk/voyagr"
+                    title="Code"
+                  /> */}
+                </Container>
+              </Container>
+            </Fade>
+            {/* <Fade left>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
                 className="project-container"
@@ -230,7 +311,7 @@ function App() {
                   />
                 </Container>
               </Container>
-            </Fade>
+            </Fade> */}
             <Fade right>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
@@ -240,7 +321,7 @@ function App() {
                   {" "}
                   <div className="projectWrapper">
                     <a
-                      href="https://github.com/Kayvonk/AXD-redux"
+                      href="https://ardx.netlify.app/"
                       className="col-sm-12 project-text"
                       target="_blank"
                       rel="noreferrer"
@@ -276,7 +357,7 @@ function App() {
               </Container>
             </Fade>
           </Container>
-          <Container className="grid-container">
+          {/* <Container className="grid-container">
             <Fade left>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
@@ -366,8 +447,8 @@ function App() {
                 </Container>
               </Container>
             </Fade>
-          </Container>
-          <Container className="grid-container">
+          </Container> */}
+          {/* <Container className="grid-container">
             <Fade left>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
@@ -456,7 +537,7 @@ function App() {
                 </Container>
               </Container>
             </Fade>
-          </Container>
+          </Container> */}
           <div className="aboutBackground">
             <Container
               id="contact"
