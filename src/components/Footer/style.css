@@ -59,17 +59,18 @@
   background-color: #00d4d0;
   border-radius: 50%;
   cursor: pointer;
-  opacity: 1;
+  /* opacity: 1; */
   z-index: 2;
+  border: none;
 }
 
 .messageIconDouble {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   /* transition: transform .5s, height .5s, width .5s; */
   position: absolute;
   width: 65px;
   height: 65px;
-  background-color: #d3d3d3;
+  background-color: #00d4d0;
   border-radius: 50%;
   cursor: pointer;
   opacity: 0;
@@ -80,6 +81,9 @@
   z-index: 0;
   top: 0;
   left: 0;
+  border-color: green;
+  border-style: none;
+  border-width: 0px 0px;
 }
 
 .contactWrapper {
@@ -88,19 +92,26 @@
   left: 50%;
   transform: translateX(-50%);
   margin: auto;
+  display: none;
+  color: black;
 }
 
-.contactWrapper  > * {
-display: none;
-color: black;
-/* transition: all 2s; */
+/* .contactWrapper > * {
+  display: none;
+  color: black;
+} */
+
+.messageIconAnimate:hover > .messageIcon {
+  background-color: #00d4d000;
+  border: 2px dashed white;
 }
 
-.messageIconAnimate:hover > .messageIcon{
-  opacity: 0;
+.messageIconAnimate:hover > .messageIcon * {
+  display: none;
 }
+
 .messageIconAnimate:hover > .messageIconDouble {
-  animation: growCard 2s both;
+  animation: growCard 2s ease-in-out both;
   /* animation-delay: 0s 2s; */
   opacity: 1;
   /* width: 300px;
@@ -112,57 +123,62 @@ color: black;
 }
 
 .messageIconAnimate:hover > .contactWrapper {
-  animation: showText 2s both;
-  /* display: block; */
+  animation: showText 2s ease-in-out both;
+  display: block;
 }
-
-
-
 
 @keyframes growCard {
   0% {
-    transform: translate(0, 0vh) scale(1.0);  
+    transform: translate(0, 0vh) scale(1);
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px 0px;
+    background-color: #00d4d0;
+
   }
   25% {
-      transform: translate(0, 0vh);
+    transform: translate(0, -12vh) scale(1);
+    border-radius: 50%;
+
+
   }
   50% {
-      transform: translate(0, -12vh) scale(1.0);
-      border-radius: 50%;
-      /* width: 65px;
-      height: 65px; */
+    transform: translate(0, -12vh) scale(5, 2);
+    border-radius: 0;
+    background-color: #00d4d010;
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2.5px 1.5px;
   }
   75% {
-      transform: translate(0, -12vh);
-  }
+    transform: translate(0, -12vh) scale(5, 2);
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2.5px 1.5px;
+   }
   100% {
     transform: translate(0, -12vh) scale(5, 2);
-    border-radius: 1pt;
+    border-radius: 0;
+    background-color: #00d4d010;
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2.5px 1.5px;
+
     /* width: 350px;
     height: 200px; */
   }
 }
 
-
-/* @keyframes showText {
-  from {
+@keyframes showText {
+  0% {
     display: none;
   }
 
-  to {
-display: block;
-  }
-} */
-@keyframes showText {
-  0% {
-display: none;  }
-
   50% {
-    display: none; 
+    display: none;
   }
 
   100% {
-    display: block; 
+    display: block;
   }
 }
-

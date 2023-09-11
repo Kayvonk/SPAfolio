@@ -56,6 +56,7 @@ function Footer() {
                     marginTop: "auto",
                     marginBottom: "auto",
                     marginLeft: 10,
+                    color: "white",
                   }}
                 >
                   kayvonk@gmail.com{" "}
@@ -69,6 +70,7 @@ function Footer() {
                     marginTop: "auto",
                     marginBottom: "auto",
                     marginLeft: 10,
+                    color: "white",
                   }}
                 >
                   (503)&nbsp;309-1924
