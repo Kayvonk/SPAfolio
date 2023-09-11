@@ -37,11 +37,11 @@ function App() {
     reset: true, // If the tilt effect has to be reset on exit.
     easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
   };
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
+  // const handleClick = () => {
+  //   setToggle(!toggle);
+  // };
 
   const handleMouseEnter = (event) => {
     handleShowAboutText();
@@ -65,7 +65,6 @@ function App() {
     window.addEventListener("resize", () => updateMedia());
     return () => window.removeEventListener("resize", () => updateMedia());
   });
-
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 3800);
@@ -155,10 +154,17 @@ function App() {
                 </Flip>
                 {/* </Tilt> */}
                 <Fade when={showAboutText}>
-                  {!isDesktop ? <div ref={imageRefCallback}
-                    className="aboutTextMobile">{showAboutText && !isDesktop ? `Full-stack Web Developer,
+                  {!isDesktop ? (
+                    <div ref={imageRefCallback} className="aboutTextMobile">
+                      {showAboutText && !isDesktop
+                        ? `Full-stack Web Developer,
                     founder of Unison Web Services, and cofounder of the Voyagr
-                    app, my aim is building fun and immersive web applications.` : ""}</div> : <></>}
+                    app, my aim is building fun and immersive web applications.`
+                        : ""}
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                 </Fade>
               </div>
             </Slide>
@@ -167,7 +173,11 @@ function App() {
             <TitleCard>
               <h1
                 id="portfolio"
-                style={{ marginTop: "70vh", paddingTop: 100, fontFamily: "monospace" }}
+                style={{
+                  marginTop: "70vh",
+                  paddingTop: 100,
+                  fontFamily: "monospace",
+                }}
               >
                 Portfolio
               </h1>
@@ -253,12 +263,14 @@ function App() {
                     link="https://voyagrs.com/"
                     title="Live"
                   />
-               </Container>
+                </Container>
               </Container>
             </Fade>
-                     </Container>
-          <Container className="grid-container"                 style={{ marginBottom: "20vh" }}
->
+          </Container>
+          <Container
+            className="grid-container"
+            style={{ marginBottom: "20vh" }}
+          >
             <Fade left>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
@@ -296,11 +308,10 @@ function App() {
                     link="http://www.unisonwebservices.com"
                     title="Live"
                   />
-                 
                 </Container>
               </Container>
             </Fade>
-                        <Fade right>
+            <Fade right>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
                 className="project-container"
@@ -345,68 +356,6 @@ function App() {
               </Container>
             </Fade>
           </Container>
-         
-          {/* <div className="contactBackground">
-            <Container
-              id="contact"
-              style={{ marginTop: 30, paddingTop: 100, paddingBottom: 10 }}
-            >
-              <TitleCard>
-                <h2 className="contactText">
-                  Want to connect about a project? Awesome!
-                </h2>
-              </TitleCard>
-              <button
-                className="btn contactBtn my-5"
-                type="button"
-                onClick={handleClick}
-              >
-                Let's Talk
-              </button>
-              <div className="contactWrapper" style={{ position: "relative" }}>
-                <Flip bottom when={toggle}>
-                  <ContactCard>
-                    <div className="cardText">
-                      <div className="contactRow">
-                        <FontAwesomeIcon
-                          icon={faEnvelope}
-                          className="bars"
-                          size="m"
-                        />
-                        <p
-                          style={{
-                            marginTop: "auto",
-                            marginBottom: "auto",
-                            marginLeft: 10,
-                          }}
-                        >
-                          kayvonk@gmail.com{" "}
-                        </p>
-                      </div>
-                      <br />
-                      <div className="contactRow">
-                        <FontAwesomeIcon
-                          icon={faPhone}
-                          className="bars"
-                          size="m"
-                        />
-                        <p
-                          style={{
-                            marginTop: "auto",
-                            marginBottom: "auto",
-                            marginLeft: 10,
-                          }}
-                        >
-                          (503)&nbsp;309-1924
-                        </p>
-                      </div>
-                    </div>
-                  </ContactCard>
-                </Flip>
-              </div>
-            </Container>
-          </div> */}
-
           <Footer />
         </div>
       ) : (

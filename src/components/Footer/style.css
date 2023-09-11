@@ -1,16 +1,25 @@
 /* ---------------Footer------------------------- */
+.messageIconAnimate {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .icons {
   transition: 0.3s;
 }
 
 @media (max-width: 360px) {
-  .icons {
+  .icons,
+  .messageIconAnimate {
     margin: 0 0.5rem;
   }
 }
 
 @media (min-width: 360px) {
-  .icons {
+  .icons,
+  .messageIconAnimate {
     margin: 0 1rem;
   }
 }
@@ -41,13 +50,119 @@
 }
 
 .messageIcon {
-  width: 65px;
-  height: 65px;
-  background-color: #00D4D0;
-  border-radius: 50%;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 65px;
+  height: 65px;
+  background-color: #00d4d0;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 2;
 }
+
+.messageIconDouble {
+  transition: all .5s ease-in-out;
+  /* transition: transform .5s, height .5s, width .5s; */
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.contactWrapper {
+  position: absolute;
+  top: -12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+}
+
+.contactWrapper  > * {
+display: none;
+color: black;
+/* transition: all 2s; */
+}
+
+.messageIconAnimate:hover > .messageIcon{
+  opacity: 0;
+}
+.messageIconAnimate:hover > .messageIconDouble {
+  animation: growCard 2s both;
+  /* animation-delay: 0s 2s; */
+  opacity: 1;
+  /* width: 300px;
+  height: 150px; */
+  transform: translate(0, -12vh);
+}
+.messageIconAnimate:hover > .messageIconDouble > .bars {
+  opacity: 0;
+}
+
+.messageIconAnimate:hover > .contactWrapper {
+  animation: showText 2s both;
+  /* display: block; */
+}
+
+
+
+
+@keyframes growCard {
+  0% {
+    transform: translate(0, 0vh) scale(1.0);  
+  }
+  25% {
+      transform: translate(0, 0vh);
+  }
+  50% {
+      transform: translate(0, -12vh) scale(1.0);
+      border-radius: 50%;
+      /* width: 65px;
+      height: 65px; */
+  }
+  75% {
+      transform: translate(0, -12vh);
+  }
+  100% {
+    transform: translate(0, -12vh) scale(5, 2);
+    border-radius: 1pt;
+    /* width: 350px;
+    height: 200px; */
+  }
+}
+
+
+/* @keyframes showText {
+  from {
+    display: none;
+  }
+
+  to {
+display: block;
+  }
+} */
+@keyframes showText {
+  0% {
+display: none;  }
+
+  50% {
+    display: none; 
+  }
+
+  100% {
+    display: block; 
+  }
+}
+
