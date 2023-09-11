@@ -154,7 +154,6 @@ function App() {
                 </Flip>
                 {/* </Tilt> */}
                 <Fade when={showAboutText}>
-                  {!isDesktop ? (
                     <div ref={imageRefCallback} className="aboutTextMobile">
                       {showAboutText && !isDesktop
                         ? `Full-stack Web Developer,
@@ -162,9 +161,7 @@ function App() {
                     app, my aim is building fun and immersive web applications.`
                         : ""}
                     </div>
-                  ) : (
-                    <></>
-                  )}
+             
                 </Fade>
               </div>
             </Slide>

@@ -81,19 +81,25 @@
   z-index: 0;
   top: 0;
   left: 0;
-  border-color: green;
+  border-color: transparent;
   border-style: none;
   border-width: 0px 0px;
 }
 
 .contactWrapper {
   position: absolute;
-  top: -12vh;
+  top: -18vh;
   left: 50%;
   transform: translateX(-50%);
   margin: auto;
   display: none;
   color: black;
+}
+
+@media (max-width: 1300px) {
+  .contactWrapper {
+    top: -13vh;
+  }
 }
 
 /* .contactWrapper > * {
@@ -110,14 +116,7 @@
   display: none;
 }
 
-.messageIconAnimate:hover > .messageIconDouble {
-  animation: growCard 2s ease-in-out both;
-  /* animation-delay: 0s 2s; */
-  opacity: 1;
-  /* width: 300px;
-  height: 150px; */
-  transform: translate(0, -12vh);
-}
+
 .messageIconAnimate:hover > .messageIconDouble > .bars {
   opacity: 0;
 }
@@ -127,6 +126,43 @@
   display: block;
 }
 
+
+.messageIconAnimate:hover > .messageIconDouble {
+  animation: growCard 2s ease-in-out both;
+  /* animation-delay: 0s 2s; */
+  opacity: 1;
+  transform: translate(0, -13vh);
+}
+
+@media (max-width: 420px) {
+  .messageIconAnimate:hover > .messageIconDouble {
+    animation: growCard3 2s ease-in-out both;
+    /* animation-delay: 0s 2s; */
+    opacity: 1;
+    transform: translate(0, -13vh);
+  }
+
+}
+@media (min-width: 420px) {
+  .messageIconAnimate:hover > .messageIconDouble {
+    animation: growCard2 2s ease-in-out both;
+    /* animation-delay: 0s 2s; */
+    opacity: 1;
+    transform: translate(0, -13vh);
+  }
+}
+@media (min-width: 1300px) {
+  .messageIconAnimate:hover > .messageIconDouble {
+    animation: growCard 2s ease-in-out both;
+    /* animation-delay: 0s 2s; */
+    opacity: 1;
+    transform: translate(0, -13vh);
+  }
+}
+
+
+
+
 @keyframes growCard {
   0% {
     transform: translate(0, 0vh) scale(1);
@@ -134,38 +170,110 @@
     border-style: none;
     border-width: 0px 0px;
     background-color: #00d4d0;
-
   }
   25% {
-    transform: translate(0, -12vh) scale(1);
+    transform: translate(0, -18vh) scale(1);
     border-radius: 50%;
-
-
   }
   50% {
-    transform: translate(0, -12vh) scale(5, 2);
-    border-radius: 0;
+    transform: translate(0, -18vh) scale(8, 3.2);
+     border-radius: 5px / 30px;
     background-color: #00d4d010;
     border-color: #00D4D0;
     border-style: solid;
-    border-width: 2.5px 1.5px;
+    border-width: 2px 1.2px;
   }
   75% {
-    transform: translate(0, -12vh) scale(5, 2);
+    transform: translate(0, -18vh) scale(8, 3.2);
+     border-radius: 5px / 30px;
     border-color: #00D4D0;
     border-style: solid;
-    border-width: 2.5px 1.5px;
+    border-width: 2px 1.2px;
    }
   100% {
-    transform: translate(0, -12vh) scale(5, 2);
-    border-radius: 0;
+    transform: translate(0, -18vh) scale(8, 3.2);
+     border-radius: 5px / 30px;
     background-color: #00d4d010;
     border-color: #00D4D0;
     border-style: solid;
-    border-width: 2.5px 1.5px;
+    border-width: 2px 1.2px;
 
-    /* width: 350px;
-    height: 200px; */
+  }
+}
+
+@keyframes growCard2 {
+  0% {
+    transform: translate(0, 0vh) scale(1);
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px 0px;
+    background-color: #00d4d0;
+  }
+  25% {
+    transform: translate(0, -13vh) scale(1);
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(0, -13vh) scale(5, 2);
+     border-radius: 5px / 30px;
+    background-color: #00d4d010;
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2px 1.2px;
+  }
+  75% {
+    transform: translate(0, -13vh) scale(5, 2);
+     border-radius: 5px / 30px;
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2px 1.2px;
+   }
+  100% {
+    transform: translate(0, -13vh) scale(5, 2);
+     border-radius: 5px / 30px;
+    background-color: #00d4d010;
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2px 1.2px;
+
+  }
+}
+
+@keyframes growCard3 {
+  0% {
+    transform: translate(0, 0vh) scale(1);
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px 0px;
+    background-color: #00d4d0;
+  }
+  25% {
+    transform: translate(0, -13vh) scale(1);
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(0, -13vh) scale(3.5, 1.6);
+     border-radius: 5px / 30px;
+    background-color: #00d4d010;
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2px 1.2px;
+  }
+  75% {
+    transform: translate(0, -13vh) scale(3.5, 1.6);
+     border-radius: 5px / 30px;
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2px 1.2px;
+   }
+  100% {
+    transform: translate(0, -13vh) scale(3.5, 1.6);
+     border-radius: 5px / 30px;
+    background-color: #00d4d010;
+    border-color: #00D4D0;
+    border-style: solid;
+    border-width: 2px 1.2px;
+
   }
 }
 

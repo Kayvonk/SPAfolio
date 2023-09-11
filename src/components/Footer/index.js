@@ -23,7 +23,7 @@ function Footer() {
           alt="upArrow" />
       </Link> */}
 
-      <footer className="footer">
+      <footer className="footer" id="contact">
         <div className="col-xs-2 icons">
           <a
             href="https://www.linkedin.com/in/kayvon-kazemini-83469391/"
