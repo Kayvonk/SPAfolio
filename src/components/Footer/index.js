@@ -3,7 +3,7 @@ import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import ContactCard from "../../components/ContactCard";
-import Flip from "react-reveal/Flip";
+import Reveal from "react-reveal/Flip";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
@@ -43,6 +43,10 @@ function Footer() {
           <div className="messageIcon">
             <FontAwesomeIcon icon={faComment} className="bars" size="2x" />
           </div>
+
+
+{/* <Reveal effect> */}
+
           <div className="messageIconDouble">
             <FontAwesomeIcon icon={faComment} className="bars" size="2x" />
           </div>
@@ -59,7 +63,7 @@ function Footer() {
                     color: "white",
                   }}
                 >
-                  kayvonk@gmail.com{" "}
+                  kayvonk@gmail.com
                 </p>
               </div>
               <br />
@@ -79,6 +83,9 @@ function Footer() {
             </div>
             {/* </Flip> */}
           </div>
+          {/* </Reveal> */}
+
+          
         </div>
 
         <div className="col-xs-2 icons">
