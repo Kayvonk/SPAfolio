@@ -1,0 +1,409 @@
+.flyingDiv {
+  position: absolute;
+}
+
+.flyingShape {
+  width: 10rem;
+}
+
+.floatAnimate1 {
+  animation: 60s infinite alternate float1;
+}
+.floatAnimate2 {
+  animation: 60s infinite alternate float2;
+}
+.floatAnimate3 {
+  animation: 60s infinite alternate float3;
+}
+.floatAnimate4 {
+  animation: 60s infinite alternate float4;
+}
+.floatAnimate5 {
+  animation: 60s infinite alternate float5;
+}
+.floatAnimate6 {
+  animation: 60s infinite alternate float6;
+}
+.floatAnimate7 {
+  animation: 60s infinite alternate float7;
+}
+.floatAnimate8 {
+  animation: 60s infinite alternate float8;
+}
+.floatAnimate9 {
+  animation: 60s infinite alternate float9;
+}
+.floatAnimate10 {
+  animation: 60s infinite alternate float10;
+}
+.floatAnimate11 {
+  animation: 60s infinite alternate float11;
+}
+.floatAnimate12 {
+  animation: 60s infinite alternate float12;
+}
+.floatAnimate13 {
+  animation: 60s infinite alternate float13;
+}
+.floatAnimate14 {
+  animation: 60s infinite alternate float14;
+}
+.floatAnimate15 {
+  animation: 60s infinite alternate float15;
+}
+.floatAnimate16 {
+  animation: 60s infinite alternate float16;
+}
+.floatAnimate17 {
+  animation: 60s infinite alternate float17;
+}
+.floatAnimate18 {
+  animation: 60s infinite alternate float18;
+}
+.floatAnimate19 {
+  animation: 60s infinite alternate float19;
+}
+.floatAnimate20 {
+  animation: 60s infinite alternate float20;
+}
+
+@keyframes float1 {
+  from {
+    transform: translate(-200%, -200%);
+  }
+  to {
+    transform: translate(200%, 200%);
+  }
+}
+
+@keyframes float2 {
+  from {
+    transform: translate(200%, 200%);
+  }
+
+  to {
+    transform: translate(-200%, -200%);
+  }
+}
+
+@keyframes float3 {
+  from {
+    transform: translate(-200%, 200%);
+  }
+
+  to {
+    transform: translate(200%, -200%);
+  }
+}
+
+@keyframes float4 {
+  from {
+    transform: translate(200%, -200%);
+  }
+
+  to {
+    transform: translate(-200%, 200%);
+  }
+}
+
+@keyframes float5 {
+  from {
+    transform: translate(-200%, -200%);
+  }
+  to {
+    transform: translate(100%, 200%);
+  }
+}
+
+@keyframes float6 {
+  from {
+    transform: translate(200%, 200%);
+  }
+
+  to {
+    transform: translate(-100%, -200%);
+  }
+}
+
+@keyframes float7 {
+  from {
+    transform: translate(-200%, 200%);
+  }
+
+  to {
+    transform: translate(100%, -200%);
+  }
+}
+
+@keyframes float8 {
+  from {
+    transform: translate(200%, -200%);
+  }
+
+  to {
+    transform: translate(-100%, 200%);
+  }
+}
+
+@keyframes float9 {
+  from {
+    transform: translate(-200%, -200%);
+  }
+  to {
+    transform: translate(200%, 100%);
+  }
+}
+
+@keyframes float10 {
+  from {
+    transform: translate(200%, 200%);
+  }
+
+  to {
+    transform: translate(-200%, -100%);
+  }
+}
+
+@keyframes float11 {
+  from {
+    transform: translate(-200%, 200%);
+  }
+
+  to {
+    transform: translate(200%, -100%);
+  }
+}
+
+@keyframes float12 {
+  from {
+    transform: translate(200%, -200%);
+  }
+
+  to {
+    transform: translate(-200%, 100%);
+  }
+}
+
+@keyframes float13 {
+  from {
+    transform: translate(-100%, -200%);
+  }
+  to {
+    transform: translate(200%, 200%);
+  }
+}
+
+@keyframes float14 {
+  from {
+    transform: translate(100%, 200%);
+  }
+
+  to {
+    transform: translate(-200%, -200%);
+  }
+}
+
+@keyframes float15 {
+  from {
+    transform: translate(-100%, 200%);
+  }
+
+  to {
+    transform: translate(200%, -200%);
+  }
+}
+
+@keyframes float16 {
+  from {
+    transform: translate(100%, -200%);
+  }
+
+  to {
+    transform: translate(-200%, 200%);
+  }
+}
+
+@keyframes float17 {
+  from {
+    transform: translate(-200%, -100%);
+  }
+  to {
+    transform: translate(200%, 200%);
+  }
+}
+
+@keyframes float18 {
+  from {
+    transform: translate(200%, 100%);
+  }
+
+  to {
+    transform: translate(-200%, -200%);
+  }
+}
+
+@keyframes float19 {
+  from {
+    transform: translate(-200%, 100%);
+  }
+
+  to {
+    transform: translate(200%, -200%);
+  }
+}
+
+@keyframes float20 {
+  from {
+    transform: translate(200%, -100%);
+  }
+
+  to {
+    transform: translate(-200%, 200%);
+  }
+}
+.rotateAnimate1 {
+  animation: 20s infinite alternate rotate1;
+}
+.rotateAnimate2 {
+  animation: 20s infinite alternate rotate2;
+}
+.rotateAnimate3 {
+  animation: 20s infinite alternate rotate3;
+}
+.rotateAnimate4 {
+  animation: 20s infinite alternate rotate4;
+}
+.rotateAnimate5 {
+  animation: 20s infinite alternate rotate5;
+}
+.rotateAnimate6 {
+  animation: 20s infinite alternate rotate6;
+}
+.rotateAnimate7 {
+  animation: 20s infinite alternate rotate7;
+}
+.rotateAnimate8 {
+  animation: 20s infinite alternate rotate8;
+}
+.rotateAnimate9 {
+  animation: 20s infinite alternate rotate9;
+}
+.rotateAnimate10 {
+  animation: 20s infinite alternate rotate10;
+}
+.rotateAnimate11 {
+  animation: 20s infinite alternate rotate11;
+}
+.rotateAnimate12 {
+  animation: 20s infinite alternate rotate12;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate2 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-90deg);
+  }
+}
+@keyframes rotate3 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
+@keyframes rotate4 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate5 {
+  from {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate6 {
+  from {
+    transform: rotate(-90deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate7 {
+  from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate8 {
+  from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate9 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(135deg);
+  }
+}
+@keyframes rotate10 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-135deg);
+  }
+}
+@keyframes rotate11 {
+  from {
+    transform: rotate(135deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate12 {
+  from {
+    transform: rotate(-135deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}

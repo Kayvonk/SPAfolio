@@ -36,6 +36,18 @@
   cursor: pointer;
 }
 
-.arrowContainer{
+.arrowContainer {
   width: 100%;
+}
+
+.messageIcon {
+  width: 65px;
+  height: 65px;
+  background-color: #00D4D0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

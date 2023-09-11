@@ -1,89 +1,173 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Container from "./components/Container";
-import ContactCard from "./components/ContactCard";
 import TitleCard from "./components/TitleCard";
 import Banner from "./components/Banner";
 import LinkCard from "./components/LinkCard";
-import CardBtn from "./components/CardBtn";
+import ContactCard from "./components/ContactCard";
 import Flip from "react-reveal/Flip";
+import Slide from "react-reveal/Slide";
 import Footer from "./components/Footer";
 import Fade from "react-reveal/Fade";
 import { BrowserRouter as Router } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
 import Loading from "./components/Loading";
 import ProjectBtn from "./components/ProjectBtn";
+import FlyingObjects from "./components/FlyingObjects";
+import Reveal from "react-reveal/Reveal";
+import { Tilt } from "react-tilt";
 
 function App() {
-  const [toggle, setToggle] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [showAboutText, setShowAboutText] = useState(false);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+
+  const defaultOptions = {
+    reverse: false, // reverse the tilt direction
+    max: 35, // max tilt rotation (degrees)
+    perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+    scale: 1.01, // 2 = 200%, 1.5 = 150%, etc..
+    speed: 1000, // Speed of the enter/exit transition
+    transition: true, // Set a transition on enter/exit.
+    axis: null, // What axis should be disabled. Can be X or Y.
+    reset: true, // If the tilt effect has to be reset on exit.
+    easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+  };
+  const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
     setToggle(!toggle);
   };
 
+  const handleMouseEnter = (event) => {
+    handleShowAboutText();
+  };
+  const handleMouseLeave = (event) => {
+    handleShowAboutText();
+  };
+
+  const imageRefCallback = useCallback((node) => {
+    if (node !== null) {
+      console.log(node);
+      node.addEventListener("mouseenter", handleMouseEnter);
+      node.addEventListener("mouseleave", handleMouseLeave);
+    }
+  }, []);
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 1200);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", () => updateMedia());
+    return () => window.removeEventListener("resize", () => updateMedia());
+  });
+
+
   useEffect(() => {
     setTimeout(() => setLoading(false), 3800);
   }, []);
+
+  const handleShowAboutText = () => {
+    if (showAboutText == true) {
+      setShowAboutText(false);
+    }
+    if (showAboutText == false) {
+      setShowAboutText(true);
+    }
+  };
 
   return (
     <Router>
       {loading === false ? (
         <div>
           <Navbar id="top" />
+          <FlyingObjects />
           <Banner />
-          <div className="aboutBackground">
-            <Container
-              style={{ marginTop: 1100, marginBottom: 150 }}
+          <Container
+            id="about"
+            style={{
+              paddingTop: "30vh",
+              marginTop: "80vh",
+              marginBottom: "20vh",
+              position: "relative",
+              minHeight: "300px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <h2
+              style={{
+                display: "flex",
+                fontSize: "40pt",
+                justifyContent: "center",
+                // marginBottom: 250,
+                fontFamily: "monospace",
+                position: "absolute",
+                top: "15vh",
+                // left: 0
+              }}
             >
-              <h2
-                id="about"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  paddingTop: 70,
-                  marginBottom: 10,
-                  fontFamily: "monospace",
-                }}
+              About Me
+            </h2>
+            <Reveal effect="revealLeft">
+              {/* <Fade right delay="1000"> */}
+              <div className="aboutTextBackground">
+                <Fade delay="1000">
+                  <div className="aboutText">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Full-stack Web Developer,
+                    founder of Unison Web Services, and cofounder of the Voyagr
+                    app, my aim is building fun and immersive web applications.
+                    While collaborating with others, thoughtfulness and
+                    diligence are key attributes that I contribute throughout
+                    any project.
+                  </div>
+                </Fade>
+              </div>
+            </Reveal>
+            <Slide left>
+              <div
+                className={
+                  isDesktop
+                    ? "aboutBackground"
+                    : "aboutBackground aboutBackgroundTransition"
+                }
               >
-                About Me
-              </h2>
-              <Fade right>
-                <img
-                  className="about-me-image img-fluid float-sm-right ml-sm-3"
-                  src="assets/profile.jpg"
-                  alt="about-me"
-                />
-              </Fade>
-              <Fade left>
-                <div className="col-sm left-text">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  Full Stack Web Developer, founder of Unison Web Services, and cofounder of the Voyagr app, my aim is building fun and immersive web applications.  Completing the University of Utah’s Coding Bootcamp has helped to cultivate proficiencies in JavaScript, React, MongoDB, Node.js, CSS3, and
-                  HTML5. Additionally, programs such as Unity, Blender, and GIMP also assist in creating innovative projects.  While collaborating with others, thoughtfulness and diligence are key attributes that I contribute throughout any project.
-                </div>
-              </Fade>
-              {/* <Fade bottom>
-                <CardBtn />
-              </Fade> */}
-              <br />
-            </Container>
-            <Link smooth to="#portfolio" className="arrowContainer">
-              <img
-                className="upArrow"
-                src="assets/downArrow.png"
-                alt="downArrow"
-              />
-            </Link>
-          </div>
+                {/* <Tilt
+                  options={defaultOptions}
+                > */}
+                <Flip right delay="500" duration="750">
+                  <img
+                    // ref={imageRefCallback}
+                    className="aboutImage"
+                    src="assets/headshot2.jpg"
+                    alt="about-me"
+                  />
+                  {/* <FontAwesomeIcon
+                          icon={faExpandArrowsAlt}
+                          className="bars"
+                          size="m"
+                        /> */}
+                </Flip>
+                {/* </Tilt> */}
+                <Fade when={showAboutText}>
+                  {!isDesktop ? <div ref={imageRefCallback}
+                    className="aboutTextMobile">{showAboutText && !isDesktop ? `Full-stack Web Developer,
+                    founder of Unison Web Services, and cofounder of the Voyagr
+                    app, my aim is building fun and immersive web applications.` : ""}</div> : <></>}
+                </Fade>
+              </div>
+            </Slide>
+          </Container>
           <Container style={{ marginTop: 50 }}>
             <TitleCard>
               <h1
                 id="portfolio"
-                style={{ paddingTop: 100, fontFamily: "monospace" }}
+                style={{ marginTop: "70vh", paddingTop: 100, fontFamily: "monospace" }}
               >
                 Portfolio
               </h1>
@@ -142,7 +226,7 @@ function App() {
                 <LinkCard>
                   <div className="projectWrapper">
                     <a
-                      href="https://voyagr.netlify.app/"
+                      href="https://voyagrs.com/"
                       className="col-sm-12 project-text"
                       target="_blank"
                       rel="noreferrer"
@@ -153,7 +237,7 @@ function App() {
                 </LinkCard>
                 <a
                   className="center"
-                  href="https://voyagr.netlify.app/"
+                  href="https://voyagrs.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -166,62 +250,15 @@ function App() {
                 <Container className="btn-container">
                   <ProjectBtn
                     name="live-btn btn btn-lg"
-                    link="https://voyagr.netlify.app/"
+                    link="https://voyagrs.com/"
                     title="Live"
                   />
-                  {/* <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/voyagr"
-                    title="Code"
-                  /> */}
-                </Container>
+               </Container>
               </Container>
             </Fade>
-            {/* <Fade right>
-              <Container
-                style={{ marginTop: 40, marginBottom: 100 }}
-                className="project-container"
-              >
-                <LinkCard>
-                  <div className="projectWrapper">
-                    <a
-                      href="https://github.com/Kayvonk/MyPracticeCompanion"
-                      className="col-sm-12 project-text"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h3>My Practice Companion</h3>
-                    </a>
-                  </div>
-                </LinkCard>
-                <a
-                  className="center"
-                  href="https://kayvonk.github.io/MyPracticeCompanion/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="assets/MyPracticeCompanionImgThumbnail.PNG"
-                    className="img-fluid images"
-                    alt="MyPracticeCompanionImgThumbnail"
-                  />
-                </a>
-                <Container className="btn-container">
-                  <ProjectBtn
-                    name="live-btn btn btn-lg"
-                    link="https://kayvonk.github.io/MyPracticeCompanion/"
-                    title="Live"
-                  />
-                  <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/MyPracticeCompanion"
-                    title="Code"
-                  />
-                </Container>
-              </Container>
-            </Fade> */}
-          </Container>
-          <Container className="grid-container">
+                     </Container>
+          <Container className="grid-container"                 style={{ marginBottom: "20vh" }}
+>
             <Fade left>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
@@ -259,60 +296,11 @@ function App() {
                     link="http://www.unisonwebservices.com"
                     title="Live"
                   />
-                  {/* <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/voyagr"
-                    title="Code"
-                  /> */}
+                 
                 </Container>
               </Container>
             </Fade>
-            {/* <Fade left>
-              <Container
-                style={{ marginTop: 40, marginBottom: 100 }}
-                className="project-container"
-              >
-                <LinkCard>
-                  {" "}
-                  <div className="projectWrapper">
-                    <a
-                      href="https://github.com/Kayvonk/NotAnotherDirectory"
-                      className="col-sm-12 project-text"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h3>Not Another Directory</h3>
-                    </a>
-                  </div>
-                </LinkCard>
-                <a
-                  className="center"
-                  href="https://kayvonk.github.io/NotAnotherDirectory/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <img
-                    src="assets/employeedirectorythumbnail.PNG"
-                    className="img-fluid images"
-                    alt="NotAnotherDirectoryImgThumbnail"
-                  />
-                </a>
-                <Container className="btn-container">
-                  <ProjectBtn
-                    name="live-btn btn btn-lg"
-                    link="https://kayvonk.github.io/NotAnotherDirectory/"
-                    title="Live"
-                  />
-                  <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/NotAnotherDirectory"
-                    title="Code"
-                  />
-                </Container>
-              </Container>
-            </Fade> */}
-            <Fade right>
+                        <Fade right>
               <Container
                 style={{ marginTop: 40, marginBottom: 100 }}
                 className="project-container"
@@ -357,188 +345,8 @@ function App() {
               </Container>
             </Fade>
           </Container>
-          {/* <Container className="grid-container">
-            <Fade left>
-              <Container
-                style={{ marginTop: 40, marginBottom: 100 }}
-                className="project-container"
-              >
-                <LinkCard>
-                  {" "}
-                  <div className="projectWrapper">
-                    <a
-                      href="https://github.com/Koffidanh/job-aid"
-                      className="col-sm-12 project-text"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h3> AmazonJS</h3>
-                    </a>
-                  </div>
-                </LinkCard>
-                <a
-                  className="center"
-                  href="https://kshopjs.web.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="assets/kshophomepagethumbnail.PNG"
-                    className="img-fluid images"
-                    alt="AmazonJSImgThumbnail"
-                  />
-                </a>
-                <Container className="btn-container">
-                  <ProjectBtn
-                    name="live-btn btn btn-lg"
-                    link="https://kshopjs.web.app/"
-                    title="Live"
-                  />
-                  <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/AmazonJS"
-                    title="Code"
-                  />
-                </Container>
-              </Container>
-            </Fade>
-
-            <Fade right>
-              <Container
-                style={{ marginTop: 40, marginBottom: 100 }}
-                className="project-container"
-              >
-                <LinkCard>
-                  {" "}
-                  <div className="projectWrapper">
-                    <a
-                      href="https://github.com/Kayvonk/DailyPlannerForTheWin"
-                      className="col-sm-12 project-text"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h3>Daily Planner For The Win</h3>
-                    </a>
-                  </div>
-                </LinkCard>
-                <a
-                  className="center"
-                  href="https://kayvonk.github.io/DailyPlannerForTheWin/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="assets/DailyPlannerImgThumbnail.PNG"
-                    className="img-fluid images"
-                    alt="DailyPlannerImgThumbnail"
-                  />
-                </a>
-                <Container className="btn-container">
-                  <ProjectBtn
-                    name="live-btn btn btn-lg"
-                    link="https://kayvonk.github.io/DailyPlannerForTheWin/"
-                    title="Live"
-                  />
-                  <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/DailyPlannerForTheWin"
-                    title="Code"
-                  />
-                </Container>
-              </Container>
-            </Fade>
-          </Container> */}
-          {/* <Container className="grid-container">
-            <Fade left>
-              <Container
-                style={{ marginTop: 40, marginBottom: 100 }}
-                className="project-container"
-              >
-                <LinkCard>
-                  {" "}
-                  <div className="projectWrapper">
-                    <a
-                      href="https://github.com/Kayvonk/MyWorkplaceTracker"
-                      className="col-sm-12 project-text"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h3> My Workplace Tracker</h3>
-                    </a>
-                  </div>
-                </LinkCard>
-                <a
-                  className="center"
-                  href="https://github.com/Kayvonk/MyWorkplaceTracker#usage"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="assets/workplaceTrackerThumbnail.png"
-                    className="img-fluid images"
-                    alt="MyWorkplaceTrackerAppImgThumbnail"
-                  />
-                </a>
-                <Container className="btn-container">
-                  <ProjectBtn
-                    name="live-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/MyWorkplaceTracker#usage"
-                    title="Usage"
-                  />
-                  <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/MyWorkplaceTracker"
-                    title="Code"
-                  />
-                </Container>
-              </Container>
-            </Fade>
-            <Fade right>
-              <Container
-                style={{ marginTop: 40, marginBottom: 300 }}
-                className="project-container"
-              >
-                <LinkCard>
-                  {" "}
-                  <div className="projectWrapper">
-                    <a
-                      href="https://github.com/Kayvonk/TeamBuilding101"
-                      className="col-sm-12 project-text"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h3> Team Building 101</h3>
-                    </a>
-                  </div>
-                </LinkCard>
-                <a
-                  className="center"
-                  href="https://github.com/Kayvonk/TeamBuilding101#usage"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="assets/teamBuildingthumbnail.PNG"
-                    className="img-fluid images"
-                    alt="TeamBuildingThumbnail"
-                  />
-                </a>
-                <Container className="btn-container">
-                  <ProjectBtn
-                    name="live-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/TeamBuilding101#usage"
-                    title="Usage"
-                  />
-                  <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/TeamBuilding101"
-                    title="Code"
-                  />
-                </Container>
-              </Container>
-            </Fade>
-          </Container> */}
-          <div className="aboutBackground">
+         
+          {/* <div className="contactBackground">
             <Container
               id="contact"
               style={{ marginTop: 30, paddingTop: 100, paddingBottom: 10 }}
@@ -597,7 +405,8 @@ function App() {
                 </Flip>
               </div>
             </Container>
-          </div>
+          </div> */}
+
           <Footer />
         </div>
       ) : (

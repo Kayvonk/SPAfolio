@@ -10,10 +10,6 @@ body {
   background-size: cover;
   background-position-x: center;
   z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 @font-face {
@@ -22,14 +18,12 @@ body {
 }
 
 @media (max-width: 576px) {
-  #about,
   #portfolio {
     font-size: 24pt;
   }
 }
 
 @media (min-width: 576px) {
-  #about,
   #portfolio {
     font-size: 40pt;
   }
@@ -150,53 +144,192 @@ body {
 
 /* ------------About me text ---------------- */
 
-.aboutBackground {
-  background-color: #00444b;
+.aboutTextMobile {
+  display: flex;
+  position: absolute;
+  background-color: #00434b00;
+  width: 60vw;
+  height: 60vw;
+  font-size: 16pt;
+  color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 5vw;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  transition: color .75s, background-color .5s;
+
 }
 
-.left-text {
+.aboutTextMobile:hover {
+  position: absolute;
+  background-color: #00434b78;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.contactBackground {
+  position: relative;
+  background-color: #00444b;
+  width: 35vw;
+  height: 35vw;
+  margin-left: 45vw;
+  border-radius: 50%;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutBackground {
+  position: absolute;
+  background-color: #00444b;
+  width: 35vw;
+  height: 35vw;
+  margin-left: 45vw;
+  border-radius: 50%;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutBackgroundTransition {
+  margin-left: 45vw;
+  transition: margin-left 0.4s;
+
+}
+
+.aboutTextBackground {
+  display: block;
+  position: absolute;
+  background-color: #00434b4d;
+  width: 75vw;
+  margin-left: 0;
+  border: 6px solid #00444b;
+  height: 35vw;
+  border-radius: 220pt;
+}
+
+.revealLeft {
+  animation: revealLeft 3s linear both;
+}
+
+@keyframes revealLeft {
+  0% {
+    width: 0vw;
+    margin-left: 45vw;
+    border: none;
+  }
+  50% {
+    width: 0vw;
+    margin-left: 45vw;
+    border: none;
+  }
+  100% {
+    width: 75vw;
+    margin-left: 0;
+    border: 6px solid #00444b;
+  }
+}
+
+.aboutText {
   color: lightgrey;
   text-align: justify;
+  padding: 5% 45% 5% 10%;
 }
-@media (max-width: 360px) {
-  .left-text {
-    font-size: 13pt;
+
+
+@media (max-width: 600px) {
+  .aboutTextMobile {
+    font-size: 11pt;
   }
 }
 
-@media (min-width: 360px) {
-  .left-text {
-    font-size: 14pt;
+@media (max-width: 400px) {
+  .aboutTextMobile {
+    font-size: 7.5pt;
   }
 }
 
-@media (min-width: 992px) {
-  .left-text {
-    font-size: 15pt;
+@media (max-width: 1200px) {
+  .aboutText {
+    font-size: 13.5pt;
   }
 }
+
 
 @media (min-width: 1200px) {
-  .left-text {
+  .aboutText {
+    font-size: 16pt;
+  }
+}
+
+@media (min-width: 1300px) {
+  .aboutText {
     font-size: 17pt;
   }
 }
 
-.about-me-image {
-  width: 100%;
-  border-radius: 40px;
-}
-
-@media screen and (max-width: 768px) {
-  .about-me-image {
-    width: 100%;
-    padding: 0 2rem !important;
+@media (min-width: 1500px) {
+  .aboutText {
+    font-size: 20pt;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .about-me-image {
-    width: 26rem;
+.aboutImage {
+  width: 33.7vw;
+  height: 33.7vw;
+  border-radius: 50%;
+  /* transition: width .5s, height .5s; */
+}
+
+
+@media screen and (max-width: 992px) {
+  .aboutTextBackground {
+    display: none;
+  }
+  .aboutBackgroundTransition {
+    margin-left: 0;
+  }
+  .aboutTextMobile {
+    display: black;
+  }
+  .aboutBackground {
+    width: 60vw;
+    height: 60vw;
+  }
+  .aboutImage{
+    width: 58vw;
+    height: 58vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .aboutTextBackground {
+    display: block;
+  }
+  .aboutBackgroundTransition {
+    margin-left: 45vw;
+  }
+  .aboutTextMobile {
+    display: none;
+  }
+  .aboutBackground {
+    width: 35vw;
+    height: 35vw;
   }
 }
 /* ------------------Line 1 text------------------------ */
@@ -337,10 +470,15 @@ body {
     font-size: x-large;
   }
 }
+.grid-container {
+  padding: 0 1rem;
+
+}
+
 
 /* -------- */
 
-@media (min-width: 992px) {
+@media (min-width: 1300px) {
   .grid-container {
     display: flex;
     justify-content: center;
