@@ -26,7 +26,7 @@ const FlyingObjects = () => {
   // ]);
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", zIndex: "1"}}>
       {shapesArray.map((shape, index) => {
         return (
           <div

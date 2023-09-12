@@ -3,11 +3,12 @@
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
+  padding-top: 10vh;
 }
 
 .iconsRow {
   /* width: 40vw; */
-  min-width: 40vw;
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -45,7 +46,7 @@
 @media (min-width: 360px) {
   .icons,
   .messageIconAnimate {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
 }
 
@@ -107,7 +108,9 @@
 .active + .messageIcon {
   transition: top 0.5s, transform 0.5s 0.25s, border-radius 0.5s 0.25s,
     background-color 0.5s 0.25s, border-color 0.5s 0.25s,
-    border-style 0.5s 0.25s, border-width 0.5s 0.25s;
+    border-style 0.5s 0.25s, border-width 0.5s 0.25s, width .25s .25s, height .25s .25s;
+    width: 100vw;
+    height: 7vh;
 }
 
 .inactive + .messageIcon {
@@ -117,7 +120,7 @@
 }
 
 .active:hover + .messageIcon {
-  top: -20vh;
+  top: -18vh;
   transform: scale(8, 2.8);
   border-radius: 5px / 30px;
   background-color: #00d4d010;
@@ -143,8 +146,8 @@
 
 .active + .messageIcon + .contactWrapper {
   transition: all 0s .55s;
-  max-width: 200px;
-  max-width:200px;
+  max-width: 100%;
+  max-width:100%;
   opacity: 1;
 }
 
@@ -153,6 +156,20 @@
   opacity: 0;
 }
 
+.contactRow .bars {
+background-color: transparent;
+width: 40px;
+height: 40px;
+padding: 10px;
+border-radius: 50%;
+box-shadow: 0px 2px 22px -4px #a0e0df31;
+border: 1.5px solid #00d4d0;
+}
+
+
+.contactRow > p {
+  white-space: nowrap;
+}
 /* .active + .messageIcon + .contactWrapper {
   transition: all .5s;
   display: block;
@@ -203,17 +220,27 @@
   display: none;
 }
 
-.messageIconAnimate + .messageIcon > .bars {
+.inactive + .messageIcon > .bars {
   opacity: 1;
 }
 
-.messageIconAnimate:hover + .messageIcon > .bars {
+.active + .messageIcon > .bars {
+  transition: opacity 0s;
   opacity: 0;
 }
+
+.inactive + .messageIcon > .bars {
+  transition: opacity 0s .25s;
+  opacity: 1;
+}
+/* .messageIconAnimate:hover + .messageIcon > .bars {
+  opacity: 0;
+} */
 
 .messageIconAnimate + .messageIcon {
   background-color: #00d4d0;
 }
+
 
 /* @media (max-width: 576px) {
 
@@ -223,7 +250,7 @@
 
 } */
 
-.faIcons {
+/* .faIcons {
   min-width: 50px;
   min-height: 50px;
   border-radius: 50%;
@@ -231,7 +258,7 @@
   background-color: transparent;
   border: 3px solid #00d4d031;
   box-shadow: 0px 2px 22px -4px #a0e0df31;
-}
+} */
 
 .contactText {
   font-family: Arial, Helvetica, sans-serif;
@@ -244,9 +271,9 @@
     font-size: medium;
     line-height: 0.2;
   }
-  .faIcons {
+  /* .contactRow .bars {
     font-size: 10px !important;
-  }
+  } */
 }
 
 @media (min-width: 576px) {

@@ -154,14 +154,13 @@ function App() {
                 </Flip>
                 {/* </Tilt> */}
                 <Fade when={showAboutText}>
-                    <div ref={imageRefCallback} className="aboutTextMobile">
-                      {showAboutText && !isDesktop
-                        ? `Full-stack Web Developer,
+                  <div ref={imageRefCallback} className="aboutTextMobile">
+                    {showAboutText && !isDesktop
+                      ? `Full-stack Web Developer,
                     founder of Unison Web Services, and cofounder of the Voyagr
                     app, my aim is building fun and immersive web applications.`
-                        : ""}
-                    </div>
-             
+                      : ""}
+                  </div>
                 </Fade>
               </div>
             </Slide>

@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
@@ -48,7 +48,7 @@ function Footer() {
           alt="upArrow" />
       </Link> */}
 
-      <footer className="footer">
+      <footer className="footer" id="contact">
         <div className="iconsRow">
           <div className="icons">
             <a
