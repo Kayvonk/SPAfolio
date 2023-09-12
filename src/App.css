@@ -1,5 +1,9 @@
 html {
-  height: 100% !important;
+    height: 100% !important;
+}
+
+#appWrapper {
+  overflow-x: hidden;
 }
 
 body {
@@ -41,25 +45,25 @@ body {
 
 @media (min-width: 360px) {
   h3 {
-    font-size: large !important;
+    font-size: x-large !important;
   }
 }
 
 @media (min-width: 576px) {
   h3 {
-    font-size: x-large !important;
+    font-size: xx-large !important;
   }
 }
 
 @media (min-width: 992px) {
   h3 {
-    font-size: larger !important;
+    font-size:  xx-large !important;
   }
 }
 
 @media (min-width: 1400px) {
   h3 {
-    font-size: x-large !important;
+    font-size:  xx-large !important;
   }
 }
 
@@ -213,7 +217,8 @@ body {
 }
 
 .aboutTextBackground {
-  display: block;
+  display: flex;
+  align-items: center;
   position: absolute;
   background-color: #00434b4d;
   width: 75vw;
@@ -230,12 +235,12 @@ body {
 @keyframes revealLeft {
   0% {
     width: 0vw;
-    margin-left: 45vw;
+    margin-left: 50vw;
     border: none;
   }
   50% {
     width: 0vw;
-    margin-left: 45vw;
+    margin-left: 50vw;
     border: none;
   }
   100% {
@@ -248,7 +253,7 @@ body {
 .aboutText {
   color: lightgrey;
   text-align: justify;
-  padding: 5% 45% 5% 10%;
+  padding: 5% 48% 7% 10%;
 }
 
 
@@ -319,7 +324,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .aboutTextBackground {
-    display: block;
+    display: flex;
   }
   .aboutBackgroundTransition {
     margin-left: 45vw;
@@ -451,29 +456,12 @@ body {
 
 /* ------------ */
 
-.cardText {
-  font-family: Arial, Helvetica, sans-serif;
-  color: lightgrey;
-  line-height: 0.8;
-}
 
-@media (max-width: 410px) {
-  .cardText,
-  .contactText {
-    font-size: large;
-  }
-}
-
-@media (min-width: 410px) {
-  .cardText,
-  .contactText {
-    font-size: x-large;
-  }
-}
 .grid-container {
   padding: 0 1rem;
 
 }
+
 
 /* -------- */
 

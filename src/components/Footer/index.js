@@ -1,19 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import ContactCard from "../../components/ContactCard";
-import Reveal from "react-reveal/Flip";
+import Flip from "react-reveal/Flip";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
-  // const [showContacts, setShowContacts] = useState(false)
+  const [showContacts, setShowContacts] = useState(false);
+  const [messageIconAnimateClass, setMessageIconAnimateClass] = useState(
+    "messageIconAnimate inactive"
+  );
   const [toggle, setToggle] = useState(false);
-
   const handleClick = () => {
     setToggle(!toggle);
   };
+
+  useEffect(() => {
+    console.log(messageIconAnimateClass);
+  }, [messageIconAnimateClass]);
+
+  const handleMouseEnter = (event) => {
+    console.log("in");
+    setMessageIconAnimateClass("messageIconAnimate active");
+    // handleMessageIconAnimateClass();
+  };
+  const handleMouseLeave = (event) => {
+    console.log("out");
+    setMessageIconAnimateClass("messageIconAnimate inactive");
+    // handleMessageIconAnimateClass();
+  };
+
+  // const contactRef = useCallback((node) => {
+  //   if (node !== null) {
+  //     node.addEventListener("mouseenter", handleMouseEnter);
+  //     node.addEventListener("mouseleave", handleMouseLeave);
+  //     console.log(node);
+  //   }
+  // }, []);
 
   return (
     <>
@@ -23,80 +48,83 @@ function Footer() {
           alt="upArrow" />
       </Link> */}
 
-      <footer className="footer" id="contact">
-        <div className="col-xs-2 icons">
-          <a
-            href="https://www.linkedin.com/in/kayvon-kazemini-83469391/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="assets/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png"
-              alt="linkedin-icon"
-            />
-          </a>
-        </div>
-        <div
-          className="col-xs-2 messageIconAnimate"
-          //  onClick={() => setShowContacts(!showContacts)}
-        >
+      <footer className="footer">
+        <div className="iconsRow">
+          <div className="icons">
+            <a
+              href="https://www.linkedin.com/in/kayvon-kazemini-83469391/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="assets/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png"
+                alt="linkedin-icon"
+              />
+            </a>
+          </div>
+          <div
+            className={messageIconAnimateClass}
+            onMouseEnter={() => handleMouseEnter()}
+            onMouseLeave={() => handleMouseLeave()}
+          ></div>
           <div className="messageIcon">
             <FontAwesomeIcon icon={faComment} className="bars" size="2x" />
           </div>
-
-
-{/* <Reveal effect> */}
-
-          <div className="messageIconDouble">
-            <FontAwesomeIcon icon={faComment} className="bars" size="2x" />
-          </div>
           <div className="contactWrapper">
-            {/* <Flip bottom when={toggle}> */}
-            <div className="cardText">
-              <div className="contactRow">
-                <FontAwesomeIcon icon={faEnvelope} className="bars" size="m" />
-                <p
-                  style={{
-                    marginTop: "auto",
-                    marginBottom: "auto",
-                    marginLeft: 10,
-                    color: "white",
-                  }}
-                >
-                  kayvonk@gmail.com
-                </p>
-              </div>
-              <br />
-              <div className="contactRow">
-                <FontAwesomeIcon icon={faPhone} className="bars" size="m" />
-                <p
-                  style={{
-                    marginTop: "auto",
-                    marginBottom: "auto",
-                    marginLeft: 10,
-                    color: "white",
-                  }}
-                >
-                  (503)&nbsp;309-1924
-                </p>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-          {/* </Reveal> */}
-
           
-        </div>
+              <div className="cardText">
+                <div className="contactRow">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="bars"
+                    size="m"
+                  />
+                  <p
+                    style={{
+                      marginTop: "auto",
+                      marginBottom: "auto",
+                      marginLeft: 10,
+                    }}
+                  >
+                    kayvonk@gmail.com{" "}
+                  </p>
+                </div>
+                <br />
+                <div className="contactRow">
+                  <FontAwesomeIcon icon={faPhone} className="bars" size="m" />
+                  <p
+                    style={{
+                      marginTop: "auto",
+                      marginBottom: "auto",
+                      marginLeft: 10,
+                    }}
+                  >
+                    (503)&nbsp;309-1924
+                  </p>
+                </div>
+              </div>
+          
+          </div>
+          {/* <div className="messageIconDouble">
+        </div> */}
 
-        <div className="col-xs-2 icons">
-          <a href="https://github.com/Kayvonk" target="_blank" rel="noreferrer">
-            <img src="assets/iconfinder_Github_1298743.png" alt="github-icon" />
-          </a>
-        </div>
-        {/* <div className="col-xs-2 icons"><a href="https://twitter.com/KayvonK" target="_blank" rel="noreferrer"><img
+          <div className="icons">
+            <a
+              href="https://github.com/Kayvonk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="assets/iconfinder_Github_1298743.png"
+                alt="github-icon"
+              />
+            </a>
+          </div>
+          {/* <div className="col-xs-2 icons"><a href="https://twitter.com/KayvonK" target="_blank" rel="noreferrer"><img
           src="assets/iconfinder_1_Twitter_colored_svg_5296514.png" alt="twitter-icon" /></a></div> */}
+        </div>
       </footer>
-      <br />
+
       <a
         className="attribution"
         href="https://www.freepik.com/vectors/background"

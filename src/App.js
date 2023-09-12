@@ -52,9 +52,9 @@ function App() {
 
   const imageRefCallback = useCallback((node) => {
     if (node !== null) {
-      console.log(node);
       node.addEventListener("mouseenter", handleMouseEnter);
       node.addEventListener("mouseleave", handleMouseLeave);
+      console.log(node);
     }
   }, []);
   const updateMedia = () => {
