@@ -5,16 +5,11 @@ import Container from "./components/Container";
 import TitleCard from "./components/TitleCard";
 import Banner from "./components/Banner";
 import LinkCard from "./components/LinkCard";
-import ContactCard from "./components/ContactCard";
 import Flip from "react-reveal/Flip";
 import Slide from "react-reveal/Slide";
 import Footer from "./components/Footer";
 import Fade from "react-reveal/Fade";
 import { BrowserRouter as Router } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faComment } from "@fortawesome/free-solid-svg-icons";
 import Loading from "./components/Loading";
 import ProjectBtn from "./components/ProjectBtn";
 import FlyingObjects from "./components/FlyingObjects";
@@ -37,16 +32,11 @@ function App() {
     reset: true, // If the tilt effect has to be reset on exit.
     easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
   };
-  // const [toggle, setToggle] = useState(false);
 
-  // const handleClick = () => {
-  //   setToggle(!toggle);
-  // };
-
-  const handleMouseEnter = (event) => {
+  const handleMouseEnter = () => {
     handleShowAboutText();
   };
-  const handleMouseLeave = (event) => {
+  const handleMouseLeave = () => {
     handleShowAboutText();
   };
 
@@ -104,17 +94,14 @@ function App() {
                 display: "flex",
                 fontSize: "40pt",
                 justifyContent: "center",
-                // marginBottom: 250,
                 fontFamily: "monospace",
                 position: "absolute",
                 top: "15vh",
-                // left: 0
               }}
             >
               About Me
             </h2>
             <Reveal effect="revealLeft">
-              {/* <Fade right delay="1000"> */}
               <div className="aboutTextBackground">
                 <Fade delay="1000">
                   <div className="aboutText">
@@ -141,18 +128,12 @@ function App() {
                 > */}
                 <Flip right delay="500" duration="750">
                   <img
-                    // ref={imageRefCallback}
                     className="aboutImage"
                     src="assets/headshot2.jpg"
                     alt="about-me"
                   />
-                  {/* <FontAwesomeIcon
-                          icon={faExpandArrowsAlt}
-                          className="bars"
-                          size="m"
-                        /> */}
+
                 </Flip>
-                {/* </Tilt> */}
                 <Fade when={showAboutText}>
                   <div ref={imageRefCallback} className="aboutTextMobile">
                     {showAboutText && !isDesktop

@@ -1,9 +1,17 @@
+.shapesContainer,
+.shapesContainer * {
+  z-index: -4;
+}
+img {
+  z-index: -2;
+}
 .flyingDiv {
   position: absolute;
 }
 
 .flyingShape {
   width: 10rem;
+  max-width: 200px;
 }
 
 .floatAnimate1 {
