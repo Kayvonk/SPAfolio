@@ -44,7 +44,7 @@ function App() {
     if (node !== null) {
       node.addEventListener("mouseenter", handleMouseEnter);
       node.addEventListener("mouseleave", handleMouseLeave);
-      console.log(node);
+      // console.log(node);
     }
   }, []);
   const updateMedia = () => {

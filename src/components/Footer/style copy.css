@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
-  padding-top: 10vh;
+  padding-top: 12vh;
 }
 
 .iconsRow {
@@ -96,7 +96,8 @@
   align-items: center;
   text-align: center;
   z-index: 2;
-  top: 0vh;
+  /* top: 0vh; */
+  bottom: 0;
   border-color: transparent;
   border-style: none;
   border-width: 0px 0px;
@@ -106,7 +107,7 @@
 }
 
 .active + .messageIcon {
-  transition: top 0.5s, transform 0.5s 0.25s, border-radius 0.5s 0.25s,
+  transition: bottom 0.5s, transform 0.5s 0.25s, border-radius 0.5s 0.25s,
     background-color 0.5s 0.25s, border-color 0.5s 0.25s,
     border-style 0.5s 0.25s, border-width 0.5s 0.25s, width .25s .25s, height .25s .25s;
     width: 100vw;
@@ -114,13 +115,14 @@
 }
 
 .inactive + .messageIcon {
-  transition: top 0.5s 0.25s, transform 0.5s, border-radius 0.5s,
+  transition: bottom 0.5s 0.25s, transform 0.5s, border-radius 0.5s,
     background-color 0.5s, border-color 0.5s, border-style 0.5s,
     border-width 0.5s;
 }
 
 .active:hover + .messageIcon {
-  top: -18vh;
+  /* top: -18vh; */
+  bottom: 170px;
   transform: scale(8, 2.8);
   border-radius: 5px / 30px;
   background-color: #00d4d010;
@@ -135,10 +137,10 @@
   max-width:65px;
   opacity: 0;
   z-index: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  right: 0;
-  bottom: 20vh;
+  left: 50%; 
+  transform: translateX(-50%);
+  /* right: 0; */
+  /* bottom: 20vh; */
   color: white;
 }
 
