@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
@@ -9,21 +9,30 @@ function Footer() {
   const [messageIconAnimateClass, setMessageIconAnimateClass] = useState(
     "messageIconAnimate inactive"
   );
+  const [targetBounds, setTargetBounds] = useState(null);
   const [toggle, setToggle] = useState(false);
   const handleClick = () => {
     setToggle(!toggle);
   };
+  const messageIconAnimateBounds = useRef();
 
   useEffect(() => {
-    console.log(messageIconAnimateClass);
+    if (messageIconAnimateClass === "messageIconAnimate active") {
+      // console.log(messageIconAnimateBounds);
+        setTargetBounds(messageIconAnimateBounds.current.getBoundingClientRect());
+    }
   }, [messageIconAnimateClass]);
 
+  // useEffect(() => {
+  //   console.log("targetBounds:", targetBounds);
+  // }, [targetBounds]);
+
   const handleMouseEnter = (event) => {
-    console.log("in");
+    // console.log("in");
     setMessageIconAnimateClass("messageIconAnimate active");
   };
   const handleMouseLeave = (event) => {
-    console.log("out");
+    // console.log("out");
     setMessageIconAnimateClass("messageIconAnimate inactive");
   };
 
@@ -45,21 +54,27 @@ function Footer() {
           </div>
           <div
             className={messageIconAnimateClass}
+            ref={messageIconAnimateBounds}
             onMouseEnter={() => handleMouseEnter()}
             onMouseLeave={() => handleMouseLeave()}
           ></div>
-          <div className="messageIcon">
+          <div className="messageIcon" 
+          // style={{bottom: (targetBounds?.bottom)}}
+          // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
+          >
             <FontAwesomeIcon icon={faComment} className="bars" size="2x" />
           </div>
-          <div className="contactWrapper">
-
+          <div className="contactWrapper"
+           style={{bottom: 155}}
+          // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
+          //  style={{bottom: (targetBounds?.bottom)}}
+          //  style={{bottom: `${targetBounds?.height}vh` || 0}}
+          //  style={{bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
+          //  style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
+           >
             <div className="cardText">
               <div className="contactRow">
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  className="bars"
-                  size="m"
-                />
+                <FontAwesomeIcon icon={faEnvelope} className="bars" size="m" />
                 <p
                   style={{
                     marginTop: "auto",
@@ -84,7 +99,6 @@ function Footer() {
                 </p>
               </div>
             </div>
-
           </div>
           <div className="icons">
             <a
