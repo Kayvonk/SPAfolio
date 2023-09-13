@@ -8,7 +8,7 @@ import React, { useState } from "react";
 // import square from "assets/constBackground-square.png"
 import "./style.css";
 
-const FlyingObjects = () => {
+const FlyingObjectsBottom = () => {
   const [shapesArray, setShapesArray] = useState([
     "box",
     "line",
@@ -35,29 +35,7 @@ const FlyingObjects = () => {
               Math.floor(Math.random() * 20) + 1
             }`}
             style={{
-              top: `${Math.floor(Math.random() * 100)}vh`,
-              left: `${Math.floor(Math.random() * 100)}vw`,
-            }}
-          >
-            <img
-              className={`flyingShape rotateAnimate${
-                Math.floor(Math.random() * 12) + 1
-              }`}
-              src={`assets/constBackground-${shape}.png`}
-              alt="FlyingShape"
-            />
-          </div>
-        );
-      })}
-      {shapesArray.map((shape, index) => {
-        return (
-          <div
-            key={shape + index}
-            className={`flyingDiv floatAnimate${
-              Math.floor(Math.random() * 20) + 1
-            }`}
-            style={{
-              top: `${Math.floor(Math.random() * 100) + 100}vh`,
+              top: `${Math.floor(Math.random() * 100) - 100}vh`,
               left: `${Math.floor(Math.random() * 100)}vw`,
             }}
           >
@@ -76,4 +54,4 @@ const FlyingObjects = () => {
   );
 };
 
-export default FlyingObjects;
+export default FlyingObjectsBottom;

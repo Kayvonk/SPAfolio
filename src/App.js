@@ -15,6 +15,7 @@ import ProjectBtn from "./components/ProjectBtn";
 import FlyingObjects from "./components/FlyingObjects";
 import Reveal from "react-reveal/Reveal";
 import { Tilt } from "react-tilt";
+import FlyingObjectsBottom from "./components/FlyingObjectsBottom";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -132,7 +133,6 @@ function App() {
                     src="assets/headshot2.jpg"
                     alt="about-me"
                   />
-
                 </Flip>
                 <Fade when={showAboutText}>
                   <div ref={imageRefCallback} className="aboutTextMobile">
@@ -147,6 +147,8 @@ function App() {
             </Slide>
           </Container>
           <Container style={{ marginTop: 50 }}>
+          {/* <FlyingObjects /> */}
+        <FlyingObjectsBottom/>
             <TitleCard>
               <h1
                 id="portfolio"
@@ -333,6 +335,7 @@ function App() {
               </Container>
             </Fade>
           </Container>
+          <FlyingObjectsBottom/>
           <Footer />
         </div>
       ) : (

@@ -89,7 +89,7 @@ body {
 
 .attribution:hover {
   text-decoration: none !important;
-  color: #3e75c3 !important;
+  /* color: #3e75c3 !important; */
 }
 @media (max-width: 280px) {
   .attribution {

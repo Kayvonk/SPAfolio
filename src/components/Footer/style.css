@@ -2,7 +2,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 150px;
   padding-top: 12vh;
 }
 
@@ -138,7 +138,7 @@
     background-color 0.5s 0.25s, border-color 0.5s 0.25s,
     border-style 0.5s 0.25s, border-width 0.5s 0.25s, width .25s .25s, height .25s .25s;
     width: 100vw;
-    height: 7vh;
+    height: 80px;
 }
 
 .inactive + .messageIcon {
