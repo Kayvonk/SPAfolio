@@ -148,7 +148,7 @@ function App() {
           </Container>
           <Container style={{ marginTop: 50 }}>
           {/* <FlyingObjects /> */}
-        <FlyingObjectsBottom/>
+        {/* <FlyingObjectsBottom/> */}
             <TitleCard>
               <h1
                 id="portfolio"
@@ -276,7 +276,7 @@ function App() {
                 >
                   {" "}
                   <img
-                    src="assets/uwsthumbnailsm.PNG"
+                    src="assets/uws2thumbnailsm.jpg"
                     className="img-fluid images"
                     alt="Unison Web Services"
                   />
@@ -292,7 +292,7 @@ function App() {
             </Fade>
             <Fade right>
               <Container
-                style={{ marginTop: 40, marginBottom: 100 }}
+                style={{ marginTop: 40, marginBottom: 150 }}
                 className="project-container"
               >
                 <LinkCard>
@@ -335,7 +335,7 @@ function App() {
               </Container>
             </Fade>
           </Container>
-          <FlyingObjectsBottom/>
+          {/* <FlyingObjectsBottom/> */}
           <Footer />
         </div>
       ) : (
