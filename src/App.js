@@ -177,31 +177,31 @@ function App() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <h3> AmazonJS</h3>
+                      <h3> Vue Gradients</h3>
                     </a>
                   </div>
                 </LinkCard>
                 <a
                   className="center"
-                  href="https://kshopjs.web.app/"
+                  href="https://vuegradients.onrender.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
-                    src="assets/kshophomepagethumbnail.PNG"
+                    src="assets/vueGradientsThumbnailSmall.PNG"
                     className="img-fluid images"
-                    alt="AmazonJSImgThumbnail"
+                    alt="Vue-Gradients-Thumbnail"
                   />
                 </a>
                 <Container className="btn-container">
                   <ProjectBtn
                     name="live-btn btn btn-lg"
-                    link="https://kshopjs.web.app/"
+                    link="https://vuegradients.onrender.com/"
                     title="Live"
                   />
                   <ProjectBtn
                     name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/AmazonJS"
+                    link="https://github.com/Kayvonk/VueGradients"
                     title="Code"
                   />
                 </Container>
@@ -220,7 +220,7 @@ function App() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <h3>Voyagr</h3>
+                      <h3>Voyagrs</h3>
                     </a>
                   </div>
                 </LinkCard>
@@ -231,7 +231,7 @@ function App() {
                   rel="noreferrer"
                 >
                   <img
-                    src="assets/voyagrHomepagethumbnailsmall.PNG"
+                    src="assets/voyagrThumbnailSmall.PNG"
                     className="img-fluid images"
                     alt="voyagrThumbnail"
                   />
