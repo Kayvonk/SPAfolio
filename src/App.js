@@ -45,7 +45,6 @@ function App() {
     if (node !== null) {
       node.addEventListener("mouseenter", handleMouseEnter);
       node.addEventListener("mouseleave", handleMouseLeave);
-      // console.log(node);
     }
   }, []);
   const updateMedia = () => {
@@ -147,8 +146,8 @@ function App() {
             </Slide>
           </Container>
           <Container style={{ marginTop: 50 }}>
-          {/* <FlyingObjects /> */}
-        {/* <FlyingObjectsBottom/> */}
+            {/* <FlyingObjects /> */}
+            {/* <FlyingObjectsBottom/> */}
             <TitleCard>
               <h1
                 id="portfolio"

@@ -1,11 +1,4 @@
 import React, { useState } from "react";
-// import box from "assets/constBackground-box.png"
-// import elbow from "assets/constBackground-elbow.png"
-// import line from "assets/constBackground-line.png"
-// import medium from "assets/constBackground-medium.png"
-// import ship from "assets/constBackground-ship.png"
-// import small from "assets/constBackground-small.png"
-// import square from "assets/constBackground-square.png"
 import "./style.css";
 
 const FlyingObjects = () => {
@@ -21,28 +14,22 @@ const FlyingObjects = () => {
     "square",
   ]);
 
-  // const [positionsArray, setPositionsArray] = useState([
-
-  // ]);
-
   return (
     <div className="shapesContainer" style={{ position: "relative" }}>
       {shapesArray.map((shape, index) => {
         return (
           <div
             key={shape + index}
-            className={`flyingDiv floatAnimate${
-              Math.floor(Math.random() * 20) + 1
-            }`}
+            className={`flyingDiv floatAnimate${Math.floor(Math.random() * 20) + 1
+              }`}
             style={{
               top: `${Math.floor(Math.random() * 100)}vh`,
               left: `${Math.floor(Math.random() * 100)}vw`,
             }}
           >
             <img
-              className={`flyingShape rotateAnimate${
-                Math.floor(Math.random() * 12) + 1
-              }`}
+              className={`flyingShape rotateAnimate${Math.floor(Math.random() * 12) + 1
+                }`}
               src={`assets/constBackground-${shape}.png`}
               alt="FlyingShape"
             />
@@ -53,18 +40,16 @@ const FlyingObjects = () => {
         return (
           <div
             key={shape + index}
-            className={`flyingDiv floatAnimate${
-              Math.floor(Math.random() * 20) + 1
-            }`}
+            className={`flyingDiv floatAnimate${Math.floor(Math.random() * 20) + 1
+              }`}
             style={{
               top: `${Math.floor(Math.random() * 100) + 100}vh`,
               left: `${Math.floor(Math.random() * 100)}vw`,
             }}
           >
             <img
-              className={`flyingShape rotateAnimate${
-                Math.floor(Math.random() * 12) + 1
-              }`}
+              className={`flyingShape rotateAnimate${Math.floor(Math.random() * 12) + 1
+                }`}
               src={`assets/constBackground-${shape}.png`}
               alt="FlyingShape"
             />

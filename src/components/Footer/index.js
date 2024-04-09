@@ -18,21 +18,14 @@ function Footer() {
 
   useEffect(() => {
     if (messageIconAnimateClass === "messageIconAnimate active") {
-      // console.log(messageIconDoubleBounds);
       setTargetBounds(messageIconDoubleBounds.current.getBoundingClientRect());
     }
   }, [messageIconAnimateClass]);
 
-  // useEffect(() => {
-  //   console.log("targetBounds:", targetBounds);
-  // }, [targetBounds]);
-
   const handleMouseEnter = (event) => {
-    // console.log("in");
     setMessageIconAnimateClass("messageIconAnimate active");
   };
   const handleMouseLeave = (event) => {
-    // console.log("out");
     setMessageIconAnimateClass("messageIconAnimate inactive");
   };
 
@@ -54,27 +47,17 @@ function Footer() {
           </div>
           <div
             className={messageIconAnimateClass}
-            // ref={messageIconDoubleBounds}
             onMouseEnter={() => handleMouseEnter()}
             onMouseLeave={() => handleMouseLeave()}
           ></div>
           <div
             className="messageIcon"
-            // style={{bottom: (targetBounds?.bottom)}}
-            // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
           >
             <FontAwesomeIcon icon={faComment} className="bars" size="2x" />
           </div>
           <div
             className="contactWrapper"
             style={{ bottom: targetBounds?.height - 44 }}
-            //  style={{bottom: targetBounds?.bottom - targetBounds?.height}}
-            //  style={{bottom: targetBounds?.height/1.3}}
-            // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
-            // style={{ bottom: targetBounds?.bottom || 152 }}
-            //  style={{bottom: `${targetBounds?.height}vh` || 0}}
-            //  style={{bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
-            //  style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
           >
             <div className="cardText">
               <div className="contactRow">
@@ -107,8 +90,6 @@ function Footer() {
           <div
             className="messageIconDouble"
             ref={messageIconDoubleBounds}
-            // style={{bottom: (targetBounds?.bottom)}}
-            // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
           ></div>
           <div className="icons">
             <a
@@ -126,7 +107,6 @@ function Footer() {
       </footer>
       <div
         className="attribution"
-        // href="https://www.freepik.com/vectors/background"
       >
         Background vector created by starline - www.freepik.com
       </div>
