@@ -142,7 +142,7 @@
 }
 
 .inactive + .messageIcon {
-  transition: bottom 0.5s 0.25s, transform 0.5s, border-radius 0.5s,
+  transition: bottom 0.5s 0.25s, transform 0.25s, border-radius 0.5s,
     background-color 0.5s, border-color 0.5s, border-style 0.5s,
     border-width 0.5s;
 }
@@ -156,6 +156,10 @@
   border-color: #00d4d0;
   border-style: solid;
   border-width: 2px 1.2px;
+}
+
+.inactive + .messageIcon  {
+  transform: scale(1, 1);
 }
 
 .contactWrapper {

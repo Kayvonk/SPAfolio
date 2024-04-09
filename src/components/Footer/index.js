@@ -59,22 +59,22 @@ function Footer() {
             onMouseLeave={() => handleMouseLeave()}
           ></div>
           <div
-            className="messageIcon"targetBounds
-          // style={{bottom: (targetBounds?.bottom)}}
-          // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
+            className="messageIcon"
+            // style={{bottom: (targetBounds?.bottom)}}
+            // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
           >
             <FontAwesomeIcon icon={faComment} className="bars" size="2x" />
           </div>
           <div
             className="contactWrapper"
-             style={{bottom: targetBounds?.height-44}}
+            style={{ bottom: targetBounds?.height - 44 }}
             //  style={{bottom: targetBounds?.bottom - targetBounds?.height}}
             //  style={{bottom: targetBounds?.height/1.3}}
             // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
             // style={{ bottom: targetBounds?.bottom || 152 }}
-          //  style={{bottom: `${targetBounds?.height}vh` || 0}}
-          //  style={{bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
-          //  style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
+            //  style={{bottom: `${targetBounds?.height}vh` || 0}}
+            //  style={{bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
+            //  style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
           >
             <div className="cardText">
               <div className="contactRow">
@@ -104,12 +104,12 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="messageIconDouble"
-          ref={messageIconDoubleBounds}
-          // style={{bottom: (targetBounds?.bottom)}}
-          // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
-          >
-          </div>
+          <div
+            className="messageIconDouble"
+            ref={messageIconDoubleBounds}
+            // style={{bottom: (targetBounds?.bottom)}}
+            // style={{ top: targetBounds?.top || 0, right: targetBounds?.right || 0, bottom: targetBounds?.bottom || 0, left: targetBounds?.left || 0}}
+          ></div>
           <div className="icons">
             <a
               href="https://github.com/Kayvonk"
