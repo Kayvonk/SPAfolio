@@ -171,7 +171,7 @@ function App() {
                   {" "}
                   <div className="projectWrapper">
                     <a
-                      href="https://kshopjs.web.app/"
+                      href="https://vuegradients.onrender.com/"
                       className="col-sm-12 project-text"
                       target="_blank"
                       rel="noreferrer"
@@ -298,38 +298,33 @@ function App() {
                   {" "}
                   <div className="projectWrapper">
                     <a
-                      href="https://ardx.netlify.app/"
+                      href="https://yourbrand.vercel.app/"
                       className="col-sm-12 project-text"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <h3>AnimeXD</h3>
+                      <h3>Jewelry Storefront</h3>
                     </a>
                   </div>
                 </LinkCard>
                 <a
                   className="center"
-                  href="https://ardx.netlify.app/"
+                  href="https://yourbrand.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
-                    src="assets/ardxhomethumbnail.PNG"
+                    src="assets/jewelryThumbnailsm.jpg"
                     className="img-fluid images"
-                    alt="AnimeXDThumbnail"
+                    alt="JewelryStorefrontThumbnail"
                   />
                 </a>
                 <Container className="btn-container">
                   <ProjectBtn
                     name="live-btn btn btn-lg"
-                    link="https://ardx.netlify.app/"
+                    link="https://yourbrand.vercel.app/"
                     title="Live"
-                  />
-                  <ProjectBtn
-                    name="source-btn btn btn-lg"
-                    link="https://github.com/Kayvonk/AXD-redux"
-                    title="Code"
-                  />
+                  />             
                 </Container>
               </Container>
             </Fade>

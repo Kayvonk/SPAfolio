@@ -19,7 +19,7 @@ function Banner() {
         </div>
         <Container className="about-btn-container">
           <LinkBtn smooth to="#about" exact>
-            <div className="about-btn btn btn-lg">Know more</div>
+            <div className="about-btn btn btn-lg">Learn more</div>
           </LinkBtn>
         </Container>
       </Slide>

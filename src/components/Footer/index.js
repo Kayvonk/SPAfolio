@@ -35,7 +35,7 @@ function Footer() {
         <div className="iconsRow">
           <div className="icons">
             <a
-              href="https://www.linkedin.com/in/kayvon-kazemini-83469391/"
+              href="https://www.linkedin.com/in/kayvon-kazemini/"
               target="_blank"
               rel="noreferrer"
             >
