@@ -15,7 +15,7 @@ import ProjectBtn from "./components/ProjectBtn";
 import FlyingObjects from "./components/FlyingObjects";
 import Reveal from "react-reveal/Reveal";
 import { Tilt } from "react-tilt";
-import FlyingObjectsBottom from "./components/FlyingObjectsBottom";
+// import FlyingObjectsBottom from "./components/FlyingObjectsBottom";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -87,6 +87,7 @@ function App() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              // backgroundColor: "white"
             }}
           >
             <h2
@@ -126,13 +127,13 @@ function App() {
                 {/* <Tilt
                   options={defaultOptions}
                 > */}
-                <Flip right delay="500" duration="750">
+                {/* <Flip right delay="500" duration="750"> */}
                   <img
                     className="aboutImage"
                     src="assets/headshot2.jpg"
                     alt="about-me"
                   />
-                </Flip>
+                {/* </Flip> */}
                 <Fade when={showAboutText}>
                   <div ref={imageRefCallback} className="aboutTextMobile">
                     {showAboutText && !isDesktop
@@ -161,6 +162,9 @@ function App() {
               </h1>
             </TitleCard>
           </Container>
+
+          {/* -------------------------row 1------------------------------- */}
+
           <Container className="grid-container">
             <Fade left>
               <Container
@@ -245,9 +249,12 @@ function App() {
               </Container>
             </Fade>
           </Container>
+
+{/* -------------------------row 2------------------------------- */}
+
+
           <Container
-            className="grid-container"
-            style={{ marginBottom: "20vh" }}
+            className="grid-container last-grid-container"
           >
             <Fade left>
               <Container
@@ -329,6 +336,197 @@ function App() {
               </Container>
             </Fade>
           </Container>
+
+
+
+
+
+
+
+
+          {/* -------------row 3---------------------------- */}
+          <Container
+            className="grid-container last-grid-container"
+          >
+            <Fade left>
+              <Container
+                style={{ marginTop: 40, marginBottom: 100 }}
+                className="project-container"
+              >
+                <LinkCard>
+                  {" "}
+                  <div className="projectWrapper">
+                    <a
+                      href="https://adv-react-hooks.netlify.app"
+                      className="col-sm-12 project-text"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <h3>Advanced React Hooks</h3>
+                    </a>
+                  </div>
+                </LinkCard>
+                <a
+                  className="center"
+                  href="https://adv-react-hooks.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <img
+                    src="assets/hooksThumbnail.PNG"
+                    className="img-fluid images"
+                    alt="Unison Web Services"
+                  />
+                </a>
+                <Container className="btn-container">
+                <ProjectBtn
+                    name="live-btn btn btn-lg"
+                    link="https://adv-react-hooks.netlify.app"
+                    title="Live"
+                  />
+                  <ProjectBtn
+                    name="source-btn btn btn-lg"
+                    link="https://github.com/Kayvonk/completed-adv-hooks"
+                    title="Code"
+                  />
+                </Container>
+              </Container>
+            </Fade>
+            <Fade right>
+              <Container
+                style={{ marginTop: 40, marginBottom: 150 }}
+                className="project-container"
+              >
+                <LinkCard>
+                  {" "}
+                  <div className="projectWrapper">
+                    <a
+                      href="https://dungeoncrawler.onrender.com"
+                      className="col-sm-12 project-text"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <h3>Dungeon Crawler</h3>
+                    </a>
+                  </div>
+                </LinkCard>
+                <a
+                  className="center"
+                  href="https://dungeoncrawler.onrender.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="assets/dungeonCrawlerThumbnail1.PNG"
+                    className="img-fluid images"
+                    alt="JewelryStorefrontThumbnail"
+                  />
+                </a>
+                <Container className="btn-container">
+                <ProjectBtn
+                    name="live-btn btn btn-lg"
+                    link="https://dungeoncrawler.onrender.com"
+                    title="Live"
+                  />
+                  <ProjectBtn
+                    name="source-btn btn btn-lg"
+                    link="https://github.com/Kayvonk/dungeonCrawlerDB"
+                    title="Code"
+                  />    
+                </Container>
+              </Container>
+            </Fade>
+          </Container>
+          {/* -------------row 4---------------------------- */}
+          <Container
+            className="grid-container last-grid-container"
+          >
+            <Fade left>
+              <Container
+                style={{ marginTop: 40, marginBottom: 100 }}
+                className="project-container"
+              >
+                <LinkCard>
+                  {" "}
+                  <div className="projectWrapper">
+                    <a
+                      href="https://wheelofdestiny.onrender.com"
+                      className="col-sm-12 project-text"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <h3>Wheel of Destiny</h3>
+                    </a>
+                  </div>
+                </LinkCard>
+                <a
+                  className="center"
+                  href="https://wheelofdestiny.onrender.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <img
+                    src="assets/WheelOfDestinyThumbnail.PNG"
+                    className="img-fluid images"
+                    alt="Unison Web Services"
+                  />
+                </a>
+                <Container className="btn-container">
+                <ProjectBtn
+                    name="live-btn btn btn-lg"
+                    link="https://wheelofdestiny.onrender.com"
+                    title="Live"
+                  />
+                  <ProjectBtn
+                    name="source-btn btn btn-lg"
+                    link="https://github.com/Kayvonk/WheelOfDestiny2.0"
+                    title="Code"
+                  />
+                </Container>
+              </Container>
+            </Fade>
+            <Fade right>
+              <Container
+                style={{ marginTop: 40, marginBottom: 150 }}
+                className="project-container"
+              >
+                <LinkCard>
+                  {" "}
+                  <div className="projectWrapper">
+                    <a
+                      href="https://rpsai.onrender.com"
+                      className="col-sm-12 project-text"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <h3>RPS AI</h3>
+                    </a>
+                  </div>
+                </LinkCard>
+                <a
+                  className="center"
+                  href="https://rpsai.onrender.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="assets/rpsaiGameThumbnail.PNG"
+                    className="img-fluid images"
+                    alt="JewelryStorefrontThumbnail"
+                  />
+                </a>
+                <Container className="btn-container">
+                  <ProjectBtn
+                    name="live-btn btn btn-lg"
+                    link="https://rpsai.onrender.com"
+                    title="Live"
+                  />             
+                </Container>
+              </Container>
+            </Fade>
+          </Container>
           {/* <FlyingObjectsBottom/> */}
           <Footer />
         </div>
@@ -337,8 +535,8 @@ function App() {
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
-            marginTop: "35vh",
+            alignItems: "center",  
+            height: "100vh", 
             padding: 50,
           }}
         >

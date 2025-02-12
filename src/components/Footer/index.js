@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import FlyingObjects from "../FlyingObjects";
 
 function Footer() {
   const [messageIconAnimateClass, setMessageIconAnimateClass] = useState(
@@ -104,13 +105,14 @@ function Footer() {
             </a>
           </div>
         </div>
-      </footer>
       <div
         className="attribution"
       >
-        Background vector created by starline - www.freepik.com
+        Background vector created by starline - www.freepik.com and animated by me.
+        <br />
       </div>
       <br />
+      </footer>
     </>
   );
 }

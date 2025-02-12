@@ -10,18 +10,23 @@ export const Nav = styled.nav`
 `;
 
 export const Link = styled(NavLink)`
-  font-size: larger;
+  font-size: 26px;
   color: lightgray;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   text-decoration: none !important;
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 100%;
   cursor: pointer;
 
+  @media screen and (max-width: 769px) {
+    font-size: 20px;
+    padding: 0 1rem;
+  }
+
   @media screen and (max-width: 360px) {
-    font-size: small;
+    font-size: 16px;
   }
 
   &:hover {

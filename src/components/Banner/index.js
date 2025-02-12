@@ -1,20 +1,44 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import Container from "../Container";
 import Slide from "react-reveal/Slide";
 import { LinkBtn } from "../Navbar/NavbarElements";
 import "./style.css";
+// var ReactRotatingText = require('react-rotating-text');
+import ReactRotatingText from 'react-rotating-text';
 
 function Banner() {
+
+// const [rollingTextIndex, setRollingTextIndex] = useState(0)
+
+const rollingTextArr = [
+  "Full-stack Web Developer",
+  "UI/UX Designer",
+  "Animation Enthusiast",
+  "Tech Educator",
+]
+
+// useEffect(() => {
+//   const interval = setInterval(() => {
+//     setRollingTextIndex((prevIndex) => 
+//       prevIndex === rollingTextArr.length - 1 ? 0 : prevIndex + 1
+//     );
+//   }, 3000);
+
+//   return () => clearInterval(interval);
+// }, [rollingTextArr.length]);
+
   return (
     <Container className="sliding-content">
       <Slide left>
         <div className="slidingTextLine">
           <div className="slidingText">
-            Hi, my name is
+            <p>Hi, my name is Kayvon.</p>
+            {/* Hi, my name is
             <span className="wordGradient"> Kayvon</span>
-            .
+            . */}
             <br />
-            ~Full-stack Web Developer
+            {/* ~{rollingTextArr[rollingTextIndex]} */}
+            ~ <ReactRotatingText items={rollingTextArr} pause={3000} />
           </div>
         </div>
         <Container className="about-btn-container">
